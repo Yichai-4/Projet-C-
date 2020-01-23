@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAl;
 
 namespace DAL
 {
-    class dalfactory
+    public class dalfactory
     {
         private static Idal instance = null;
         static dalfactory() { }
