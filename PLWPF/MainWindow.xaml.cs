@@ -41,5 +41,10 @@ namespace PLWPF
         {
             new Order().ShowDialog();
         }
+
+        private void ButtonHU_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
