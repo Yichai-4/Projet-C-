@@ -1,0 +1,25 @@
+﻿<Window x:Class="PLWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="מערכת  איתור הנופש" Height="600" Width="800" FontSize="20">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="243*"/>
+            <RowDefinition Height="108*"/>
+            <RowDefinition Height="108*"/>
+            <RowDefinition Height="110*"/>
+        </Grid.RowDefinitions>
+        <!--<Grid.Background>
+            <ImageBrush ImageSource = "Images/Fond d'écran 1.jpg"/>
+        </Grid.Background>-->
+        <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="80" FontSize="36" Grid.Row="1" Click="ButtonGR_Click"/>
+        <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="79" FontSize="36" Grid.Row="2" Click="ButtonHU_Click"/>
+        <Button x:Name="ButtonOr" Content="Admin" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="79" FontSize="36" Grid.Row="3" Click="ButtonOr_Click"/>
+        <Label Content="   Welcome to the YBY Site" HorizontalAlignment="Left" Margin="119,30,0,0" VerticalAlignment="Top" Height="73" Width="546" FontFamily="Rage Italic" FontSize="48"/>
+
+    </Grid>
+</Window>
