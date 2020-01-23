@@ -20,9 +20,26 @@ namespace PLWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+            //ButtonGR.FontSize = 
+        }
+
+        private void ButtonGR_Click(object sender, RoutedEventArgs e)
+        {
+            new GuestRequest().ShowDialog();
+        }
+
+        private void ButtonHU_Click(object sender, RoutedEventArgs e)
+        {
+            new HostingUnit().ShowDialog();
+        }
+
+        private void ButtonOr_Click(object sender, RoutedEventArgs e)
+        {
+            new Order().ShowDialog();
         }
     }
 }
