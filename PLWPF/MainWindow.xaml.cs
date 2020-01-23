@@ -24,5 +24,10 @@ namespace PLWPF
         {
             InitializeComponent();
         }
+
+        private void ButtonHU_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
