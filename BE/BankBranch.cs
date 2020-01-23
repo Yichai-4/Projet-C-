@@ -8,10 +8,12 @@ namespace BE
 {
     public class BankBranch
     {
-        int BankNumber { get; set; }
-        string BankName { get; set; }
-        int BranchNumber { get; set; }
-        string BranchAddress { get; set; }
-        string BranchCity { get; set; }
+        public int BankNumber { get; set; }
+        public string BankName { get; set; }
+        public int BranchNumber { get; set; }
+        public string BranchAddress { get; set; }
+        public string BranchCity { get; set; }
+
+        public bool permitionOfDebit { get; set; }
     }
 }
