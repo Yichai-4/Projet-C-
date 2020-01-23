@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE
+namespace DAL
 {
-    public class Class1
+    class Dal_imp
     {
     }
 }
