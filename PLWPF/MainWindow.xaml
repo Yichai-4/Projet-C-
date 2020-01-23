@@ -13,9 +13,9 @@
             <RowDefinition Height="108*"/>
             <RowDefinition Height="110*"/>
         </Grid.RowDefinitions>
-        <!--<Grid.Background>
+        <Grid.Background>
             <ImageBrush ImageSource = "Images/Fond d'écran 1.jpg"/>
-        </Grid.Background>-->
+        </Grid.Background>
         <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="80" FontSize="36" Grid.Row="1" Click="ButtonGR_Click"/>
         <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="79" FontSize="36" Grid.Row="2" Click="ButtonHU_Click"/>
         <Button x:Name="ButtonOr" Content="Admin" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="79" FontSize="36" Grid.Row="3" Click="ButtonOr_Click"/>
