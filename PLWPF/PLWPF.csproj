@@ -67,6 +67,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Enums.cs" />
     <Compile Include="GuestRequest.xaml.cs">
       <DependentUpon>GuestRequest.xaml</DependentUpon>
     </Compile>
