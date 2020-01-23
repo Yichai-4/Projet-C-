@@ -23,5 +23,10 @@ namespace PLWPF
         {
             InitializeComponent();
         }
+
+        private void buttonOrder_Click(object sender, RoutedEventArgs e)
+        {
+            new Order().ShowDialog();
+        }
     }
 }

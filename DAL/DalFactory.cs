@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class dalfactory
+    public class dalfactory
     {
         private static Idal instance = null;
         static dalfactory() { }

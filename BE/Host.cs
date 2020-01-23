@@ -9,18 +9,18 @@ namespace BE
     // שמייצגת מארח ותכלול Host מחלקה בשם
     public class Host
     {
-        int HostKey { get; set; }
+        public int HostKey { get; set; }
 
-        string PrivateName { get; set; }
+        public string PrivateName { get; set; }
 
-        string FamilyName { get; set; }
+        public string FamilyName { get; set; }
 
-        int PhoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
 
-        string MailAddress { get; set; }
+        public string MailAddress { get; set; }
 
-        int BankAccountNumber { get; set; }
+        public int BankAccountNumber { get; set; }
 
-        bool CollectionClearance { get; set; }
+        public bool CollectionClearance { get; set; }
     }
 }
