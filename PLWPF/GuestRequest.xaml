@@ -1,0 +1,98 @@
+﻿<Window x:Class="PLWPF.GuestRequest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="GuestRequest" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="374*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Private name :" HorizontalAlignment="Left" Margin="10,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="102" FontSize="14" FontStyle="Italic" Height="29"/>
+        <TextBox Name="tbPrivateName" HorizontalAlignment="Left" Height="22" Margin="144,68,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path= PrivateName}" VerticalAlignment="Top" Width="153" FontSize="14"/>
+        <Label Content="Family name :" HorizontalAlignment="Left" Margin="10,95,0,0" Grid.Row="1" VerticalAlignment="Top" Width="102" FontSize="14" FontStyle="Italic" Height="29"/>
+        <TextBox Name="tbFamilyName" HorizontalAlignment="Left" Height="23" Margin="144,101,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path= FamilyName}" VerticalAlignment="Top" Width="153" FontSize="14"/>
+        <Label Content="Entry Date :" HorizontalAlignment="Left" Margin="10,180,0,0" Grid.Row="1" VerticalAlignment="Top" Width="102" FontSize="14" FontStyle="Italic" Height="29"/>
+        <Label Content="Release Date :" HorizontalAlignment="Left" Margin="10,214,0,0" Grid.Row="1" VerticalAlignment="Top" Width="102" FontSize="14" FontStyle="Italic" Height="29"/>
+        <Label Content="Area :" HorizontalAlignment="Left" Margin="13,248,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" FontSize="14" FontStyle="Italic" Height="29"/>
+        <ComboBox Name="cbArea" HorizontalAlignment="Left" Margin="144,252,0,0" Grid.Row="1" VerticalAlignment="Top" Width="153" Height="25"/>
+        <Label Content="Sub Area (optional) :" HorizontalAlignment="Left" Margin="10,282,0,0" Grid.Row="1" VerticalAlignment="Top" Width="130" FontSize="14" FontStyle="Italic" Height="29"/>
+        <ComboBox Name="SubArea" HorizontalAlignment="Left" Margin="145,289,0,0" Grid.Row="1" VerticalAlignment="Top" Width="153" Height="22"/>
+        <Label Content="Type :" HorizontalAlignment="Left" Margin="414,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="108" FontSize="14" FontStyle="Italic" Height="29"/>
+        <ComboBox Name="cbType" HorizontalAlignment="Left" Margin="580,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" Height="22"/>
+        <Label Content="Number of adults :" HorizontalAlignment="Left" Margin="407,95,0,0" Grid.Row="1" VerticalAlignment="Top" Width="130" FontSize="14" FontStyle="Italic" Height="29"/>
+        <TextBox Name="tbAdults" Text="{Binding Path= Adults}" HorizontalAlignment="Left" Height="23" Margin="580,101,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Number of children" HorizontalAlignment="Left" Margin="410,129,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="127"/>
+        <TextBox Name="tbChildren" Text="{Binding Path= Children}" HorizontalAlignment="Left" Height="23" Margin="580,135,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Pool :" HorizontalAlignment="Left" Margin="414,163,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Width="148" FontStyle="Italic" Height="29"/>
+        <ComboBox Name="cbPool" HorizontalAlignment="Left" Margin="580,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" Height="22"/>
+        <Label Content="Jacuzzi :" HorizontalAlignment="Left" Margin="414,197,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="148"/>
+        <ComboBox Name="cbJacuzzi" HorizontalAlignment="Left" Margin="580,204,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" Height="22"/>
+        <Label Content="Garden :" HorizontalAlignment="Left" Margin="410,231,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="149"/>
+        <ComboBox Name="cbGarden" HorizontalAlignment="Left" Margin="580,238,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" Height="22"/>
+        <Label Content="Attractions for children :" HorizontalAlignment="Left" Margin="410,265,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="165"/>
+        <ComboBox Name="cbAttractions" HorizontalAlignment="Left" Margin="580,272,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" Height="22"/>
+        <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="552" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Height="27"/>
+        <Button Name="ButtonADD" 
+                Content="ADD" 
+                HorizontalAlignment="Left" Margin="614,317,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" FontSize="18" 
+                Click="ButtonEnter_Click" FontWeight="Bold" Height="37" Background="#FF27F113">
+            <!--<Button.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=tbPrivateName, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=tbFamilyName, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=dpEntryDate, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=dpReleaseDate, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=tbAdults, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=tbChildren, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbArea, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbType, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbPool, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbJacuzzi, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbGarden, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbAttractions, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>-->
+        </Button>
+        <Label Name="TitleGR" Content="Add a new guest request " HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="792" FontSize="24" FontFamily="Segoe UI Black"/>
+        <DatePicker  Name="dpEntryDate" Text="{Binding Path= EntryDate}" HorizontalAlignment="Left" Margin="144,185,0,0" Grid.Row="1" VerticalAlignment="Top" Width="153" DisplayDate="2020-01-20" DisplayDateEnd="2050-12-31" DisplayDateStart="2020-01-01" Height="24" />
+        <DatePicker Name="dpReleaseDate" Text="{Binding Path= ReleaseDate}" HorizontalAlignment="Left" Margin="144,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="153" DisplayDateStart="2020-01-01" DisplayDateEnd="2050-12-31" DisplayDate="2020-01-20" Height="24"/>
+        <Label Content="Mail adress :" HorizontalAlignment="Left" Margin="13,133,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" FontSize="14" FontStyle="Italic"/>
+        <TextBox Name="tbMail" HorizontalAlignment="Left" Height="23" Margin="144,139,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+
+
+    </Grid>
+</Window>
