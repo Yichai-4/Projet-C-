@@ -8,23 +8,20 @@ namespace BE
 {
     public class HostingUnit
     {
-        public int HostingUnitKey// מספר מזהה של יחידת האירוח
+        public int HostingUnitKey // מספר מזהה של יחידת האירוח
         {
             get { return HostingUnitKey; }
             set { HostingUnitKey = Configuration.key++; }
         }
 
         public Host Owner;
-
         public int nomberOfPersons;
-
         public int numOfRooms;
-
         public string type;
 
         public string Status { get; set; } // סטטוס בקשת האירוח 
         public DateTime RegistrationDate { get; set; } // תאריך רישום למערכת 
-        public DateTime entrydate { get; set; } // תאריך רצוי לתחילת  הנופש 
+        public DateTime EntryDate { get; set; } // תאריך רצוי לתחילת  הנופש 
         public string ReleaseDate { get; set; } // תאריך רצוי לסיום הנופש 
         public string Area { get; set; } // אזור הנופש הרצוי בארץ
         public string SubArea { get; set; } //  תת-איזור רצוי
@@ -37,6 +34,7 @@ namespace BE
         public string ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
 
         public string HostingUnitName { get; set; }
+
         // Creates an initialized boolean matrix in FALSE:
         public bool[,] Diary = new bool[12, 31];
     }

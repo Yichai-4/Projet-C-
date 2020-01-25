@@ -8,7 +8,8 @@
         Title="מערכת  איתור הנופש" Height="600" Width="800" FontSize="20">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="243*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="118*"/>
             <RowDefinition Height="108*"/>
             <RowDefinition Height="108*"/>
             <RowDefinition Height="110*"/>
@@ -16,10 +17,10 @@
         <Grid.Background>
             <ImageBrush ImageSource = "Images/Fond d'écran 1.jpg"/>
         </Grid.Background>
-        <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="80" FontSize="36" Grid.Row="1" Click="ButtonGR_Click"/>
-        <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="79" FontSize="36" Grid.Row="2" Click="ButtonHU_Click"/>
-        <Button x:Name="ButtonOr" Content="Admin" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="728" Height="79" FontSize="36" Grid.Row="3" Click="ButtonOr_Click"/>
-        <Label Content="   Welcome to the YBY Site" HorizontalAlignment="Left" Margin="119,30,0,0" VerticalAlignment="Top" Height="73" Width="546" FontFamily="Rage Italic" FontSize="48"/>
+        <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Center" Margin="44,19,20,9" VerticalAlignment="Center" Width="728" Height="80" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
+        <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Center" Margin="44,19,20,9" VerticalAlignment="Center" Width="728" Height="80" FontSize="36" Grid.Row="3" Click="ButtonHU_Click"/>
+        <Button x:Name="ButtonOr" Content="Admin" HorizontalAlignment="Center" Margin="44,21,20,11" VerticalAlignment="Center" Width="728" Height="78" FontSize="36" Grid.Row="4" Click="ButtonOr_Click" VerticalContentAlignment="Center"/>
+        <Label Content="   Welcome to the YBY Site" HorizontalAlignment="Center" Margin="10,23,20,10" VerticalAlignment="Center" Height="92" Width="762" FontFamily="Rage Italic" FontSize="72"/>
 
     </Grid>
 </Window>
