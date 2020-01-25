@@ -20,7 +20,7 @@
         <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Center" Margin="44,19,20,9" VerticalAlignment="Center" Width="728" Height="80" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
         <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Center" Margin="44,19,20,9" VerticalAlignment="Center" Width="728" Height="80" FontSize="36" Grid.Row="3" Click="ButtonHU_Click"/>
         <Button x:Name="ButtonOr" Content="Admin" HorizontalAlignment="Center" Margin="44,21,20,11" VerticalAlignment="Center" Width="728" Height="78" FontSize="36" Grid.Row="4" Click="ButtonOr_Click" VerticalContentAlignment="Center"/>
-        <Label Content="   Welcome to the YBY Site" HorizontalAlignment="Center" Margin="10,23,20,10" VerticalAlignment="Center" Height="92" Width="762" FontFamily="Rage Italic" FontSize="72"/>
+        <Label Content="Welcome to the YBY Site" HorizontalAlignment="Center" Margin="10,23,20,10" VerticalAlignment="Center" FontFamily="Rage Italic" FontSize="72"/>
 
     </Grid>
 </Window>

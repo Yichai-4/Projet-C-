@@ -28,5 +28,15 @@ namespace PLWPF
         {
             new Order().ShowDialog();
         }
+
+        private void buttonUpdateHU_Click(object sender, RoutedEventArgs e)
+        {
+            new UpdateHostingUnit().ShowDialog();
+        }
+
+        private void buttonDeleteHU_Click(object sender, RoutedEventArgs e)
+        {
+            new DeleteHostingUnit().ShowDialog();
+        }
     }
 }

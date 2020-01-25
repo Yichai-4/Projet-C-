@@ -8,25 +8,28 @@
         Title="AddHostingUnit" Height="450" Width="600">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="69*"/>
-            <RowDefinition Height="350*"/>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="366*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
-        <Label Content="Add a New Hosting Unit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Height="69" FontSize="36" FontFamily="Segoe UI Black"/>
+        <Label Content="Add a New Hosting Unit" FontSize="24" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="552" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Height="27" Grid.Row="1"/>
-        <Label Content="Hosting unit name :" HorizontalAlignment="Left" Margin="312,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="130" FontSize="14" FontStyle="Italic"/>
-        <TextBox Name="tbNameHU"  Text="" HorizontalAlignment="Left" Height="29" Margin="447,68,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Host private name : " HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="1" VerticalAlignment="Top" Width="143" FontSize="14" FontStyle="Italic"/>
-        <TextBox Name="tbHostPName" Text="{Binding Path= PrivateName}"  HorizontalAlignment="Left" Height="29" Margin="158,68,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Host family name : " HorizontalAlignment="Left" Margin="10,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="143" FontSize="14" FontStyle="Italic"/>
-        <TextBox Name="tbHostFName"  Text="{Binding Path= FamilyName}" HorizontalAlignment="Left" Height="29" Margin="158,111,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Phone number :" HorizontalAlignment="Left" Margin="10,157,0,0" Grid.Row="1" VerticalAlignment="Top" Width="143" FontSize="14" FontStyle="Italic"/>
-        <TextBox Name="tbPhoneNumber" Text="{Binding Path=PhoneNumber}"  HorizontalAlignment="Left" Height="29" Margin="158,157,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Location :" HorizontalAlignment="Left" Margin="312,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="29" FontStyle="Italic" FontSize="14"/>
-        <ComboBox Name="cbLocation" HorizontalAlignment="Left" Margin="447,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="29"/>
-        <Label Content="Mail adress :" HorizontalAlignment="Left" Margin="10,202,0,0" Grid.Row="1" VerticalAlignment="Top" Width="143" FontSize="14"/>
-        <TextBox Name="tbMail"  Text="{Binding Path=MailAdress}" HorizontalAlignment="Left" Height="29" Margin="158,202,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Hosting unit name :" HorizontalAlignment="Left" Margin="312,68,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <TextBox Name="tbNameHU"  Text="" HorizontalAlignment="Left" Height="29" Margin="447,68,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Host private name : " HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <TextBox Name="tbHostPName" Text="{Binding Path= PrivateName}"  HorizontalAlignment="Left" Height="29" Margin="170,68,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Host family name : " HorizontalAlignment="Left" Margin="10,111,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <TextBox Name="tbHostFName"  Text="{Binding Path= FamilyName}" HorizontalAlignment="Left" Height="29" Margin="170,111,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Phone number :" HorizontalAlignment="Left" Margin="10,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <TextBox Name="tbPhoneNumber" Text="{Binding Path=PhoneNumber}"  HorizontalAlignment="Left" Height="29" Margin="170,157,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Location :" HorizontalAlignment="Left" Margin="312,111,0,0" Grid.Row="1" VerticalAlignment="Top" FontStyle="Italic" FontSize="14"/>
+        <ComboBox Name="cbLocation" HorizontalAlignment="Left" Margin="447,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Mail adress :" HorizontalAlignment="Left" Margin="10,202,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox Name="tbMail"  Text="{Binding Path=MailAdress}" HorizontalAlignment="Left" Height="29" Margin="170,202,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Bank account number :" HorizontalAlignment="Left" Margin="10,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" TextOptions.TextHintingMode="Animated"/>
+        <TextBox Name="tbBankNumber" Text="" HorizontalAlignment="Left" Height="29" Margin="170,246,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Pool :" HorizontalAlignment="Left" Margin="312,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
     </Grid>
 </Window>

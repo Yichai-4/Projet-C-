@@ -9,14 +9,15 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="65*"/>
-            <RowDefinition Height="354*"/>
+            <RowDefinition Height="225*"/>
+            <RowDefinition Height="129*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="Images/Hotel image 1.jpg"/>
         </Grid.Background>
-        <Button Name="buttonAddHU" Content="Add Hosting Unit" HorizontalAlignment="Left" Margin="10,104,0,0" Grid.Row="1" VerticalAlignment="Top" Width="572" Height="90" FontSize="36" Click="buttonAddHU_Click"/>
-        <Button Name="buttonPersonalA" Content="Personal Area" HorizontalAlignment="Left" Margin="10,233,0,0" Grid.Row="1" VerticalAlignment="Top" Width="572" Height="90" FontSize="36" Click="button_Click"/>
-        <Label Content="                 Hosting Unit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="592" Height="65" FontSize="36" FontFamily="Segoe UI Black"/>
+        <Button Name="buttonAddHU" Content="Add Hosting Unit" HorizontalAlignment="Center" Margin="10,104,0,0" Grid.Row="1" VerticalAlignment="Center" Width="572" Height="90" FontSize="36" Click="buttonAddHU_Click"/>
+        <Button Name="buttonPersonalA" Content="Personal Area" HorizontalAlignment="Center" Margin="10,20,0,0" Grid.Row="2" VerticalAlignment="Center" Width="572" Height="90" FontSize="36" Click="button_Click"/>
+        <Label Content="Hosting Unit" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontFamily="Segoe UI Black" Margin="10,0,0,0"/>
 
     </Grid>
 </Window>

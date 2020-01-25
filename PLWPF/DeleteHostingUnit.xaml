@@ -1,0 +1,17 @@
+﻿<Window x:Class="PLWPF.DeleteHostingUnit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="DeleteHostingUnit" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="86*"/>
+            <RowDefinition Height="333*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Delete an hosting unit" Margin="107,8,76,10" VerticalAlignment="Center" FontSize="36" FontFamily="Segoe UI Black" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="68" Width="409"/>
+        <Label Content="Hosting unit key :" HorizontalAlignment="Left" Margin="10,41,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" FontStyle="Italic"/>
+    </Grid>
+</Window>
