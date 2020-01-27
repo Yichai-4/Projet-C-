@@ -16,8 +16,8 @@ namespace DAL
         bool DeleteHostingUnit(int myhostingUnitKey); // מחיקת יחידת אירוח 
         void HostingUnitUpdate(HostingUnit hostingUnit); // עדכון יחידת אירוח 
 
-        void AddInvitation(Order order); // הוספת הזמנה 
-        void UpdateInvitation(Order order); // עדכון הזמנה 
+        void AddOrder(Order order); // הוספת הזמנה 
+        void UpdateOrder(Order order); // עדכון הזמנה 
         List<HostingUnit> GetListOfAllAccommodationUnits(List<HostingUnit> hostingUnits); // קבלת רשימת כל יחידות האירוח 
         List<GuestRequest> ListAllCustomerRequirements(List<GuestRequest> guestRequests); // קבלת רשימת כל דרישות הלקוחות 
         List<Order> GetListOfAllInvitations(List<Order> orders); // קבלת רשימת כל ההזמנות

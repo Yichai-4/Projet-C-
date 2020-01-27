@@ -21,9 +21,17 @@ namespace BL
 
         }
 
-        public void AddOrder(GuestRequest requete)
+        public void AddOrder(GuestRequest requete,HostingUnit myHostingUnit )
         {
-            // instance.AddInvitation
+            List<Order> best = new List<Order>();
+            var compatible2 = from g in DataSource.lorders
+                              where g.Guestreq == requete.GuestRequestKey
+                              select g;
+                        //  instance.AddOrder();
+        }
+        public void AddOrder( )
+        {
+          //  instance.AddOrder();
         }
 
         public bool addrequest(GuestRequest getRequest)
@@ -36,7 +44,7 @@ namespace BL
         {
             return false;
         }
-
+        #region date
         public bool CheckDate(GuestRequest start, GuestRequest end)
         {
 
@@ -54,13 +62,13 @@ namespace BL
             else
                 return true;
         }
-
+        #endregion
 
         public void choose_of_client(int guest, int host)
         {
             throw new NotImplementedException();
         }
-
+        #region get
         public string GetBankBranch(int id)
         {
             throw new NotImplementedException();
@@ -85,7 +93,7 @@ namespace BL
         {
             throw new NotImplementedException();
         }
-
+        #endregion
         public bool HostingUnitModify(HostingUnit hostingUnit)
         {
             throw new NotImplementedException();
@@ -107,10 +115,10 @@ namespace BL
 
             foreach (HostingUnit item in compatible2)
             {
-                if (CheckDate(requete, item) == true)
+                if (CheckDate(requete, item) == true)//verifie les possibilite en fonction de la demande 
                 {
                     best.Add(item);
-                    //AddOrder(requete, item);
+                    AddOrder(requete, item);
                 }
             }
             return best;
@@ -123,6 +131,9 @@ namespace BL
 
         public bool sent_mail(GuestRequest a)
         {
+            if (a.pemission == true)
+                return true;
+            else
             return false;
 
         }

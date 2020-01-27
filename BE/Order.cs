@@ -15,9 +15,8 @@ namespace BE
             get { return OrderKey; }
             set { OrderKey = Configuration.key1++; }
         }
-        public int HostingUnitKey { get; set; }
-
-        public int GuestRequestKey { get; set; }
+        public int HostingUKey = Configuration.key;
+        public int Guestreq = Configuration.code;
 
         /// int OrderKey { get; set; }
 
