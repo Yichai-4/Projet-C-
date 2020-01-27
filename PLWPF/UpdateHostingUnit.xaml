@@ -12,6 +12,7 @@
             <RowDefinition Height="326*"/>
         </Grid.RowDefinitions>
         <Label Content="Update an hosting unit" HorizontalAlignment="Center" Margin="185,13,185,10" VerticalAlignment="Center" FontSize="36" FontFamily="Segoe UI Black"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" Margin="632,267,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF34F715" FontSize="24" Width="150" Height="49"/>
 
     </Grid>
 </Window>
