@@ -32,6 +32,53 @@
         <TextBox Name="tbBankNumber" Text="" HorizontalAlignment="Left" Height="29" Margin="170,246,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Pool :" HorizontalAlignment="Left" Margin="312,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
         <CheckBox Content="CollectionClearance " HorizontalAlignment="Left" Margin="10,302,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
-        <Button Content="ADD" HorizontalAlignment="Left" Margin="447,343,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96" FontSize="24" Background="#FF8AF30C" Height="37"/>
+        <Button Name="ButtonADD" 
+            Content="ADD" 
+            HorizontalAlignment="Center" Margin="421,342,25,10" Grid.Row="1" VerticalAlignment="Center" Width="146" FontSize="18" 
+            FontWeight="Bold" Height="38" Background="#FF27F113" VerticalContentAlignment="Center">
+            <!--<Button.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=tbPrivateName, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=tbFamilyName, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=dpEntryDate, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=dpReleaseDate, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=tbAdults, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=tbChildren, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbArea, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbType, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbPool, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbJacuzzi, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbGarden, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbAttractions, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>-->
+        </Button>
     </Grid>
 </Window>

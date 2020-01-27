@@ -25,7 +25,7 @@ namespace BL
         {
             List<Order> best = new List<Order>();
             var compatible2 = from g in DataSource.lorders
-                              where g.Guestreq == requete.GuestRequestKey
+                              where g.GuestRequestKey == requete.GuestRequestKey
                               select g;
                         //  instance.AddOrder();
         }
@@ -131,10 +131,10 @@ namespace BL
 
         public bool sent_mail(GuestRequest a)
         {
-            if (a.pemission == true)
-                return true;
-            else
-            return false;
+            //if (a.permission == true)
+            //    return true;
+            //else
+                return false;
 
         }
 

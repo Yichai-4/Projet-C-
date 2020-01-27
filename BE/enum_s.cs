@@ -8,10 +8,7 @@ namespace BE
 {
 
     public class enum_s
-    {
-       
-
-        
+    {  
             public enum HostingUnit
             {
                 Add,

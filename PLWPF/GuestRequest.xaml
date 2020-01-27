@@ -42,7 +42,7 @@
         <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Margin="0,10,0,0"/>
         <Button Name="ButtonADD" 
                 Content="ADD" 
-                HorizontalAlignment="Center" Margin="516,327,150,5" Grid.Row="2" VerticalAlignment="Center" Width="126" FontSize="18" 
+                HorizontalAlignment="Center" Margin="602,322,44,10" Grid.Row="2" VerticalAlignment="Center" Width="146" FontSize="18" 
                 Click="ButtonEnter_Click" FontWeight="Bold" Height="38" Background="#FF27F113" VerticalContentAlignment="Center">
             <!--<Button.Style>
                 <Style>
