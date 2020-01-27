@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ClassDAL : Idal
+    public class DAL : Idal
     {
         public void AddGuestrequest(GuestRequest guestRequest)
         {

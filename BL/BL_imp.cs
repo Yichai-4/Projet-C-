@@ -14,8 +14,6 @@ namespace BL
     {
         Idal instance = dalfactory.Instance;
 
-
-
         public bool addhostingunit(HostingUnit hostingUnit)
         {
             instance.AddHostingUnit(hostingUnit);
@@ -103,7 +101,7 @@ namespace BL
 
             List<HostingUnit> best = new List<HostingUnit>();
             var compatible2 = from g in DataSource.lhostingUnits
-                              where g.Area == requete.Area && g.NumChildren <= requete.NumChildren && g.NumAdults <= requete.NumAdults && g.Pool == requete.Pool && g.Jacuzzi == requete.Jacuzzi &&
+                              where g.Area == requete.Area && g.NumChildren <= requete.Children && g.NumAdults <= requete.Adults && g.Pool == requete.Pool && g.Jacuzzi == requete.Jacuzzi &&
                               g.ChildrenAttractions == requete.ChildrenAttractions && g.Garden == requete.Garden
                               select g;
 
@@ -133,13 +131,6 @@ namespace BL
         {
             throw new NotImplementedException();
         }
-
-
-
-
-
-
-
 
     }
 }

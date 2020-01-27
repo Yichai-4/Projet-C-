@@ -51,9 +51,9 @@ namespace DAL
 
                 Type = original.Type,
 
-                NumAdults = original.NumAdults,
+                Adults = original.Adults,
 
-                NumChildren = original.NumChildren,
+                Children = original.Children,
 
                 Pool = original.Pool,
 
@@ -76,7 +76,7 @@ namespace DAL
 
                 FamilyName = original.FamilyName,
 
-                FhoneNumber = original.FhoneNumber,
+                PhoneNumber = original.PhoneNumber,
 
                 MailAddress = original.MailAddress,
 

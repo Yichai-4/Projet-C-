@@ -21,12 +21,12 @@ namespace BE
         public string Type { get; set; } // סוג יחידת האירוח הרצוי
         public int Adults { get; set; } // מספר המבוגרים
         public int Children { get; set; } // מספר ילדים
-        public bool Pool { get; set; } // האם מעוניין בבריכה
-        public bool Jacuzzi { get; set; } // האם מעוניין בגקוזי 
-        public bool Garden { get; set; } // האם מעוניין בגינה 
-        public bool ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
-         
-       // public string Object.ToString;
+        public string Pool { get; set; } // האם מעוניין בבריכה
+        public string Jacuzzi { get; set; } // האם מעוניין בגקוזי 
+        public string Garden { get; set; } // האם מעוניין בגינה 
+        public string ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
+
+        string ToString;
 
 
 
