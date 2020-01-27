@@ -68,23 +68,22 @@ namespace DAL
 
         #region GetList
 
-        public List<HostingUnit> GetListOfAllAccommodationUnits(List<HostingUnit> hostingUnits)
+        public List<HostingUnit> GetListAllHostingUnits(List<HostingUnit> hostingUnits)
         {
             return hostingUnits;
         }
 
-        public List<BankBranch> GetListOfAllExistingBankBranches(List<BankBranch> bankBranches)
+        public List<BankBranch> GetListAllBankBranches(List<BankBranch> bankBranches)
         {
             return bankBranches;
         }
 
-        public List<Order> GetListOfAllInvitations(List<Order> orders)
+        public List<Order> GetListAllOrders(List<Order> orders)
         {
             return orders;
         }
 
-
-        public List<GuestRequest> ListAllCustomerRequirements(List<GuestRequest> guestRequests)
+        public List<GuestRequest> GetListAllGuestRequests(List<GuestRequest> guestRequests)
         {
             return guestRequests;
         }

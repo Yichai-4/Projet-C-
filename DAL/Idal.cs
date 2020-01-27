@@ -18,9 +18,9 @@ namespace DAL
 
         void AddOrder(Order order); // הוספת הזמנה 
         void UpdateOrder(Order order); // עדכון הזמנה 
-        List<HostingUnit> GetListOfAllAccommodationUnits(List<HostingUnit> hostingUnits); // קבלת רשימת כל יחידות האירוח 
-        List<GuestRequest> ListAllCustomerRequirements(List<GuestRequest> guestRequests); // קבלת רשימת כל דרישות הלקוחות 
-        List<Order> GetListOfAllInvitations(List<Order> orders); // קבלת רשימת כל ההזמנות
-        List<BankBranch> GetListOfAllExistingBankBranches(List<BankBranch> bankBranches); // קבלת רשימת כל סניפי הבנק הקיימים בארץ 
+        List<HostingUnit> GetListAllHostingUnits(List<HostingUnit> hostingUnits); // קבלת רשימת כל יחידות האירוח 
+        List<GuestRequest> GetListAllGuestRequests(List<GuestRequest> guestRequests); // קבלת רשימת כל דרישות הלקוחות 
+        List<Order> GetListAllOrders(List<Order> orders); // קבלת רשימת כל ההזמנות
+        List<BankBranch> GetListAllBankBranches(List<BankBranch> bankBranches); // קבלת רשימת כל סניפי הבנק הקיימים בארץ 
     }
 }
