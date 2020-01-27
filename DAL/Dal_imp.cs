@@ -50,49 +50,37 @@ namespace DAL
 
         #endregion
 
-        #region delete
-        public bool DeleteHostingUnit(int myhostingUnitKey)//linq
+        #region Delete
+        public bool DeleteHostingUnit(int myhostingUnitKey)
         {
+            // Link
             var v = from item in DataSource.lhostingUnits
                     where item.HostingUnitKey == myhostingUnitKey
                     select item;
 
             HostingUnit myhostingUnit = GetHostingUnit(myhostingUnitKey);
-            if (v == null) throw new Exception("HostingUnit with the same HostingUnitKey not found...");
+            if (v == null)
+                throw new Exception("Hosting unit with the same hosting unit key not found...");
             DataSource.lguestRequests.RemoveAll(sc => sc.GuestRequestKey == myhostingUnitKey);
             return DataSource.lhostingUnits.Remove(myhostingUnit);
         }
         #endregion
 
-
-
         #region GetList
 
         public List<HostingUnit> GetListOfAllAccommodationUnits(List<HostingUnit> hostingUnits)
         {
-
             return hostingUnits;
-
         }
-
-
-
-
 
         public List<BankBranch> GetListOfAllExistingBankBranches(List<BankBranch> bankBranches)
         {
             return bankBranches;
-
         }
-
-
-
 
         public List<Order> GetListOfAllInvitations(List<Order> orders)
         {
             return orders;
-
-
         }
 
 
@@ -102,7 +90,6 @@ namespace DAL
         }
 
         #endregion
-
 
         #region Update
         public void GuestrequestUpdate(GuestRequest myguestRequest)//linq
@@ -149,8 +136,7 @@ namespace DAL
         }
         #endregion
 
-
-        #region get
+        #region Get
         public GuestRequest GetGuestRequest(int myguestrequest)
         {
             return DataSource.lguestRequests.FirstOrDefault(g => g.GuestRequestKey == myguestrequest);

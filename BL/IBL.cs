@@ -9,7 +9,6 @@ namespace BL
 {
     interface IBL
     {
-
         void StatusModify(GuestRequest status);
         void AddOrder(GuestRequest requete,HostingUnit myHostingUnit);
         bool addhostingunit(HostingUnit hostingUnit);
@@ -26,7 +25,5 @@ namespace BL
         bool sent_mail(GuestRequest a);
         void insert_date(GuestRequest b, HostingUnit c);
         void choose_of_client(int guest, int host);
-
-
     }
 }

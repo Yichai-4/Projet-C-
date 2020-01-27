@@ -15,8 +15,8 @@ namespace BE
             get { return OrderKey; }
             set { OrderKey = Configuration.key1++; }
         }
-        public int HostingUKey = Configuration.key;
-        public int Guestreq = Configuration.code;
+        public int HostingUnitKey = Configuration.key;
+        public int GuestRequestKey = Configuration.code;
 
         public DateTime CreateDate;             // יצירת תאריך ההזמנה
         public DateTime OrderDate;              // יצירת תאריך משלוח המייל ללקוח   

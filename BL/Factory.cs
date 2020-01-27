@@ -22,6 +22,5 @@ namespace BL
                 return instance;
             }
         }
-
     }
 }
