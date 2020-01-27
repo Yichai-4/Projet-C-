@@ -11,12 +11,12 @@ namespace BL
     {
 
         void StatusModify(GuestRequest status);
+        void AddOrder(GuestRequest requete,HostingUnit myHostingUnit);
         bool addhostingunit(HostingUnit hostingUnit);
+        bool addrequest(GuestRequest getRequest);
         bool releasehostingunit(HostingUnit hostingUnit);
         bool HostingUnitModify(HostingUnit hostingUnit);
-        void AddOrder(GuestRequest requete);
         bool CheckDate(GuestRequest start, GuestRequest end);
-        bool addrequest(GuestRequest getRequest);
         string GetHostingUnit(int prenom);
         string GetGuestRequest(int id);
         string GetOrders(int id);
@@ -27,7 +27,6 @@ namespace BL
         void insert_date(GuestRequest b, HostingUnit c);
         void choose_of_client(int guest, int host);
 
-        bool CheckDate(GuestRequest start, HostingUnit end);
 
     }
 }

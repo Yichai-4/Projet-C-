@@ -36,7 +36,7 @@ namespace DAL
                     DataSource.lhostingUnits.Add(hostingUnit);
         }
 
-        public void AddInvitation(Order orders)
+        public void AddOrder(Order orders)
         {
             if (DataSource.lorders == null)
                 DataSource.lorders.Add(orders);
@@ -50,7 +50,7 @@ namespace DAL
 
         #endregion
 
-
+        #region delete
         public bool DeleteHostingUnit(int myhostingUnitKey)//linq
         {
             var v = from item in DataSource.lhostingUnits
@@ -62,7 +62,7 @@ namespace DAL
             DataSource.lguestRequests.RemoveAll(sc => sc.GuestRequestKey == myhostingUnitKey);
             return DataSource.lhostingUnits.Remove(myhostingUnit);
         }
-
+        #endregion
 
 
 
@@ -135,7 +135,7 @@ namespace DAL
         }
 
 
-        public void UpdateInvitation(Order myOrder)//linq
+        public void UpdateOrder(Order myOrder)//linq
         {
             var v = from item in DataSource.lorders
                     where item.OrderKey == myOrder.OrderKey

@@ -14,6 +14,6 @@ namespace BE
         public string BranchAddress { get; set; }
         public string BranchCity { get; set; }
 
-        public bool permitionOfDebit { get; set; }
+        public bool permission { get; set; }
     }
 }

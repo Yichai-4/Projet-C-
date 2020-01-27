@@ -24,6 +24,11 @@ namespace DAL
             throw new NotImplementedException();
         }
 
+        public void AddOrder(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool DeleteHostingUnit(int myhostingUnitKey)
         {
             throw new NotImplementedException();
@@ -60,6 +65,11 @@ namespace DAL
         }
 
         public void UpdateInvitation(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateOrder(Order order)
         {
             throw new NotImplementedException();
         }

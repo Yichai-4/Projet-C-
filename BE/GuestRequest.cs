@@ -12,7 +12,7 @@ namespace BE
         public string PrivateName { get; set; } // שם פרטי של הלקוח 
         public string FamilyName { get; set; } // שם המשפחה 
         public string MailAdress { get; set; } // כתובת מייל
-        public string Status { get; set; } // סטטוס בקשת האירוח 
+        public enum_s.Status Status { get; set; } // סטטוס בקשת האירוח 
         public string RegistrationDate { get; set; } // תאריך רישום למערכת 
         public string EntryDate { get; set; } // תאריך רצוי לתחילת  הנופש 
         public string ReleaseDate { get; set; } // תאריך רצוי לסיום הנופש 
@@ -26,7 +26,7 @@ namespace BE
         public string Garden { get; set; } // האם מעוניין בגינה 
         public string ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
 
-        string ToString;
+        //string ToString;
 
 
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using BL;
 namespace PLWPF
 {
     class Enums
@@ -31,11 +31,7 @@ namespace PLWPF
             Jerusalem
         }
 
-        public enum Status
-        {
-            Active,
-            Unactive
-        }
+        
 
         public enum Type
         {
@@ -49,6 +45,13 @@ namespace PLWPF
         {
             Add,
             Update
+        }
+        public enum Status
+        {
+            Not_yet_treated,
+            mail_has_been_sent,
+            Closes_for_customer_unresponsiveness,
+            Closes_with_customer_response
         }
     }
 }
