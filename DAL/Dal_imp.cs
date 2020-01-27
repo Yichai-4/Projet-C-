@@ -13,7 +13,7 @@ namespace DAL
     public class Dal_imp : Idal
     {
         #region Add
-        public void AddGuestrequest(GuestRequest guestRequest)
+        public void AddGuestRequest(GuestRequest guestRequest)
         {
             if (DataSource.lguestRequests == null)
                 DataSource.lguestRequests.Add(guestRequest);
@@ -92,7 +92,7 @@ namespace DAL
         #endregion
 
         #region Update
-        public void GuestrequestUpdate(GuestRequest myguestRequest)//linq
+        public void UpdateGuestRequest(GuestRequest myguestRequest)//linq
         {
 
             var v = from item in DataSource.lguestRequests
@@ -106,7 +106,7 @@ namespace DAL
         }
 
 
-        public void HostingUnitUpdate(HostingUnit myhostingUnit)//linq
+        public void UpdateHostingUnit(HostingUnit myhostingUnit)//linq
         {
 
             var v = from item in DataSource.lhostingUnits
