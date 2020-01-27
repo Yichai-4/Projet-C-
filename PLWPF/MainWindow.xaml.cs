@@ -24,7 +24,6 @@ namespace PLWPF
         public MainWindow()
         {
             InitializeComponent();
-            //ButtonGR.FontSize = 
         }
 
         private void ButtonGR_Click(object sender, RoutedEventArgs e)
@@ -37,9 +36,9 @@ namespace PLWPF
             new HostingUnit().ShowDialog();
         }
 
-        private void ButtonOr_Click(object sender, RoutedEventArgs e)
+        private void ButtonAdmin_Click(object sender, RoutedEventArgs e)
         {
-            new Order().ShowDialog();
+            new Admin().ShowDialog();
         }
     }
 }

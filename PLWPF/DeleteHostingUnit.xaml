@@ -8,10 +8,10 @@
         Title="DeleteHostingUnit" Height="450" Width="600">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="86*"/>
-            <RowDefinition Height="333*"/>
+            <RowDefinition Height="96*"/>
+            <RowDefinition Height="323*"/>
         </Grid.RowDefinitions>
-        <Label Content="Delete an hosting unit" Margin="107,8,76,10" VerticalAlignment="Center" FontSize="36" FontFamily="Segoe UI Black" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="68" Width="409"/>
-        <Label Content="Hosting unit key :" HorizontalAlignment="Left" Margin="10,41,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" FontStyle="Italic"/>
+        <Label Content="Delete an hosting unit" Margin="103,20,87,10" FontSize="36" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="66" Width="402" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Hosting unit key :" HorizontalAlignment="Left" Margin="10,41,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" FontStyle="Italic" Height="31" Width="130"/>
     </Grid>
 </Window>

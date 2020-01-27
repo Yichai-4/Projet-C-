@@ -12,14 +12,14 @@ namespace DAL
     //refair les list: il faut qu'il  return et pas autre 
     public class Dal_imp : Idal
     {
-        #region add
+        #region Add
         public void AddGuestrequest(GuestRequest guestRequest)
         {
             if (DataSource.lguestRequests == null)
                 DataSource.lguestRequests.Add(guestRequest);
             for (int i = 0; i < DataSource.lguestRequests.Count; i++)
                 if (DataSource.lguestRequests[i].GuestRequestKey == guestRequest.GuestRequestKey)
-                    throw new Exception("guestRequest with the same GuestRequestKey  founded !!!");
+                    throw new Exception("guest request with the same guest request key founded !!");
                 else
                     DataSource.lguestRequests.Add(guestRequest);
         }
@@ -31,7 +31,7 @@ namespace DAL
                 DataSource.lhostingUnits.Add(hostingUnit);
             for (int i = 0; i < DataSource.lhostingUnits.Count; i++)
                 if (DataSource.lhostingUnits[i].HostingUnitKey == hostingUnit.HostingUnitKey)
-                    throw new Exception("hostingUnit with the same hostingUnitKey  founded !!!");
+                    throw new Exception("hosting unit with the same hosting unit key founded !!");
                 else
                     DataSource.lhostingUnits.Add(hostingUnit);
         }
@@ -42,8 +42,7 @@ namespace DAL
                 DataSource.lorders.Add(orders);
             for (int i = 0; i < DataSource.lorders.Count; i++)
                 if (DataSource.lorders[i].OrderKey == orders.OrderKey)
-                    throw new Exception("Order with the same o" +
-                        "rderKey  founded !!!");
+                    throw new Exception("Order with the same order key founded !!");
                 else
                     DataSource.lorders.Add(orders);
 
@@ -105,7 +104,7 @@ namespace DAL
         #endregion
 
 
-        #region udapte
+        #region Update
         public void GuestrequestUpdate(GuestRequest myguestRequest)//linq
         {
 

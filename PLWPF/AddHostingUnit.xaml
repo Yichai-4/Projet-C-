@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PLWPF"
         mc:Ignorable="d"
-        Title="AddHostingUnit" Height="450" Width="600">
+        Title="AddHostingUnit" Height="478" Width="600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="53*"/>
@@ -31,5 +31,7 @@
         <Label Content="Bank account number :" HorizontalAlignment="Left" Margin="10,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" TextOptions.TextHintingMode="Animated"/>
         <TextBox Name="tbBankNumber" Text="" HorizontalAlignment="Left" Height="29" Margin="170,246,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Pool :" HorizontalAlignment="Left" Margin="312,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
+        <CheckBox Content="CollectionClearance " HorizontalAlignment="Left" Margin="10,302,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <Button Content="ADD" HorizontalAlignment="Left" Margin="447,343,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96" FontSize="24" Background="#FF8AF30C" Height="37"/>
     </Grid>
 </Window>

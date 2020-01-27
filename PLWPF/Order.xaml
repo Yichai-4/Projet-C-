@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PLWPF"
         mc:Ignorable="d"
-        Title="Order" Height="450" Width="800">
-    <Grid>
-        
+        Title="Order" Height="350" Width="600">
+    <Grid Margin="0,0,0,-3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Label Content="Order" HorizontalAlignment="Center" Margin="226,28,254,21" VerticalAlignment="Center" FontSize="36" FontFamily="Segoe UI Black" Height="52" Width="112"/>
+        <Button Name="buttonCustomerList" Content="Customer list" HorizontalAlignment="Center" Margin="10,18,10,13" VerticalAlignment="Center" FontSize="36" Width="572" Height="70" Grid.Row="1"/>
+        <Button Name="buttonOrderList" Content="Order list" HorizontalAlignment="Center" Margin="10,16,10,17" VerticalAlignment="Center" FontSize="36" Width="572" Height="68" Grid.Row="2"/>
+
     </Grid>
+
 </Window>

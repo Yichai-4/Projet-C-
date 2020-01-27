@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="UpdateHostingUnit" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="326*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Update an hosting unit" HorizontalAlignment="Center" Margin="185,13,185,10" VerticalAlignment="Center" FontSize="36" FontFamily="Segoe UI Black"/>
+
     </Grid>
 </Window>

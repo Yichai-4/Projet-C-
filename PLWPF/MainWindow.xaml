@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PLWPF"
         mc:Ignorable="d"
-        Title="מערכת  איתור הנופש" Height="600" Width="800" FontSize="20">
+        Title="מערכת  איתור הנופש" Height="600" Width="792.5" FontSize="20">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="125*"/>
             <RowDefinition Height="118*"/>
-            <RowDefinition Height="108*"/>
-            <RowDefinition Height="108*"/>
-            <RowDefinition Height="110*"/>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="105*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource = "Images/Fond d'écran 1.jpg"/>
         </Grid.Background>
-        <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Center" Margin="44,19,20,9" VerticalAlignment="Center" Width="728" Height="80" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
-        <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Center" Margin="44,19,20,9" VerticalAlignment="Center" Width="728" Height="80" FontSize="36" Grid.Row="3" Click="ButtonHU_Click"/>
-        <Button x:Name="ButtonOr" Content="Admin" HorizontalAlignment="Center" Margin="44,21,20,11" VerticalAlignment="Center" Width="728" Height="78" FontSize="36" Grid.Row="4" Click="ButtonOr_Click" VerticalContentAlignment="Center"/>
-        <Label Content="Welcome to the YBY Site" HorizontalAlignment="Center" Margin="10,23,20,10" VerticalAlignment="Center" FontFamily="Rage Italic" FontSize="72"/>
+        <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Center" Margin="40,9.5,16,8.5" VerticalAlignment="Center" Width="728" Height="89" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
+        <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Center" Margin="40,0,16,10" VerticalAlignment="Bottom" Width="728" Height="88" FontSize="36" Grid.Row="3" Click="ButtonHU_Click"/>
+        <Button x:Name="ButtonAdmin" Content="Admin" HorizontalAlignment="Center" Margin="40,10,16,10" VerticalAlignment="Center" Width="728" Height="87" FontSize="36" Grid.Row="4" VerticalContentAlignment="Center" Click="ButtonAdmin_Click"/>
+        <Label Content="Welcome to the YBY Site" HorizontalAlignment="Center" Margin="57,10,49,0" VerticalAlignment="Top" FontFamily="Rage Italic" FontSize="72"/>
 
     </Grid>
 </Window>

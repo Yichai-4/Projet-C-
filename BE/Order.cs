@@ -10,7 +10,7 @@ namespace BE
     public class Order
     {
 
-        public int OrderKey    // מספר מזהה של ההזמנה
+        public int OrderKey                    // מספר מזהה של ההזמנה
         {
             get { return OrderKey; }
             set { OrderKey = Configuration.key1++; }
@@ -19,10 +19,7 @@ namespace BE
 
         public int GuestRequestKey { get; set; }
 
-        /// int OrderKey { get; set; }
-
-
-        public DateTime CreateDate; //     יצירת תאריך ההזמנה
-        public DateTime OrderDate;//        יצירת תאריך משלוח המייל ללקוח   
+        public DateTime CreateDate;             // יצירת תאריך ההזמנה
+        public DateTime OrderDate;              // יצירת תאריך משלוח המייל ללקוח   
     }
 }

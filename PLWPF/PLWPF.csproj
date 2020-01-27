@@ -58,6 +58,9 @@
     <Compile Include="AddOrder.xaml.cs">
       <DependentUpon>AddOrder.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DeleteHostingUnit.xaml.cs">
       <DependentUpon>DeleteHostingUnit.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
