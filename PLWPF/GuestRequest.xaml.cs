@@ -27,14 +27,13 @@ namespace PLWPF
             cbGarden.ItemsSource = Enum.GetValues(typeof(Enums.Pool));
             cbAttractions.ItemsSource = Enum.GetValues(typeof(Enums.Pool));
             cbArea.ItemsSource = Enum.GetValues(typeof(Enums.Area));
-            //cbStatus.ItemsSource = Enum.GetValues(typeof(Enums.Status));
             cbType.ItemsSource = Enum.GetValues(typeof(Enums.Type));
         }
 
         private void ButtonEnter_Click(object sender, RoutedEventArgs e)
         {
-            if (int.Parse(tbAdults.Text) < 0 || int.Parse(tbChildren.Text) < 0)
-                MessageBox.Show("Number of adults can't be negative", "ERROR", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            //if (int.Parse(tbAdults.Text) < 0 || int.Parse(tbChildren.Text) < 0)
+            //    MessageBox.Show("Number of adults can't be negative", "ERROR", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             this.Close();
         }
 

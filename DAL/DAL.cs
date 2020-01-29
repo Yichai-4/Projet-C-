@@ -9,17 +9,12 @@ namespace DAL
 {
     public class DAL : Idal
     {
-        public void AddGuestrequest(GuestRequest guestRequest)
+        public void AddGuestRequest(GuestRequest guestRequest)
         {
             throw new NotImplementedException();
         }
 
         public void AddHostingUnit(HostingUnit hostingUnit)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AddInvitation(Order order)
         {
             throw new NotImplementedException();
         }
@@ -34,37 +29,32 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public List<HostingUnit> GetListOfAllAccommodationUnits(List<HostingUnit> hostingUnits)
+        public List<HostingUnit> GetListAllHostingUnits(List<HostingUnit> hostingUnits)
         {
             throw new NotImplementedException();
         }
 
-        public List<BankBranch> GetListOfAllExistingBankBranches(List<BankBranch> bankBranches)
+        public List<BankBranch> GetListAllBankBranches(List<BankBranch> bankBranches)
         {
             throw new NotImplementedException();
         }
 
-        public List<Order> GetListOfAllInvitations(List<Order> orders)
+        public List<Order> GetListAllOrders(List<Order> orders)
         {
             throw new NotImplementedException();
         }
 
-        public void GuestrequestUpdate(GuestRequest guestRequest)
+        public void UpdateGuestRequest(GuestRequest guestRequest)
         {
             throw new NotImplementedException();
         }
 
-        public void HostingUnitUpdate(HostingUnit hostingUnit)
+        public void UpdateHostingUnit(HostingUnit hostingUnit)
         {
             throw new NotImplementedException();
         }
 
-        public List<GuestRequest> ListAllCustomerRequirements(List<GuestRequest> guestRequests)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateInvitation(Order order)
+        public List<GuestRequest> GetListAllGuestRequests(List<GuestRequest> guestRequests)
         {
             throw new NotImplementedException();
         }

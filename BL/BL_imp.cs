@@ -36,7 +36,7 @@ namespace BL
 
         public bool addrequest(GuestRequest getRequest)
         {
-            instance.AddGuestrequest(getRequest);
+            instance.AddGuestRequest(getRequest);
             return true;
         }
 

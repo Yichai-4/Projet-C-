@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="UpdateOrder" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="338*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Update Order" HorizontalAlignment="Center" Margin="270,10,270,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black"/>
+        <Button Name="buttonUpdateOrder" Content="UPDATE" HorizontalAlignment="Left" Margin="616,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="24" Background="#FF0C76F5" Height="44" Width="113"/>
+
     </Grid>
 </Window>
