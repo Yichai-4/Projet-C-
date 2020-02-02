@@ -12,8 +12,7 @@
             <RowDefinition Height="269*"/>
         </Grid.RowDefinitions>
         <Label Content="Delete an hosting unit" Margin="103,10,87,0" FontSize="36" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="66" Width="402" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-        <Label Content="Hosting unit key :" HorizontalAlignment="Left" Margin="10,41,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" FontStyle="Italic" Height="31" Width="130"/>
-        <TextBox Name="tbHUKey" HorizontalAlignment="Left" Height="31" Margin="145,41,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
-        <Button Content="DELETE" HorizontalAlignment="Left" Margin="473,215,0,0" Grid.Row="1" VerticalAlignment="Top" Width="109" Height="44" Background="#FFF02D0E" FontSize="24"/>
+        <Button Content="DELETE" Grid.Row="1" VerticalAlignment="Top" Width="136" Height="44" Background="#FFF02D0E" FontSize="24" HorizontalAlignment="Center" Margin="446,215,10,0"/>
+        <ListBox Height="166" Grid.Row="1" Margin="123,23,145,80"/>
     </Grid>
 </Window>

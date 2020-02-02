@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PLWPF"
         mc:Ignorable="d"
-        Title="HostingUnit" Height="450" Width="605">
+        Title="HostingUnit" Height="350" Width="600">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="150*"/>
             <RowDefinition Height="100*"/>
-            <RowDefinition Height="225*"/>
-            <RowDefinition Height="129*"/>
+            <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="Images/Hotel image 1.jpg"/>
         </Grid.Background>
-        <Button Name="buttonAddHU" Content="Add Hosting Unit" HorizontalAlignment="Center" Margin="10,104,0,0" Grid.Row="1" VerticalAlignment="Center" Width="572" Height="90" FontSize="36" Click="buttonAddHU_Click"/>
-        <Button Name="buttonPersonalA" Content="Personal Area" HorizontalAlignment="Center" Margin="10,20,0,0" Grid.Row="2" VerticalAlignment="Center" Width="572" Height="90" FontSize="36" Click="button_Click"/>
-        <Label Content="Hosting Unit" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontFamily="Segoe UI Black" Margin="10,0,0,0"/>
+        <Button Name="buttonAddHU" Content="Add Hosting Unit" Width="500" Height="70" FontSize="36" Click="buttonAddHU_Click" Grid.Row="1"/>
+        <Button Name="buttonPersonalA" Content="Personal Area" Grid.Row="2" Width="500" Height="70" FontSize="36" Click="button_Click"/>
+        <Label Content="Hosting Unit" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black" Margin="135,10" HorizontalAlignment="Center"/>
 
     </Grid>
 </Window>

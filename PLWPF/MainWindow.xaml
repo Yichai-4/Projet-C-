@@ -17,10 +17,10 @@
         <Grid.Background>
             <ImageBrush ImageSource = "Images/Fond d'écran 1.jpg"/>
         </Grid.Background>
-        <Button x:Name="ButtonGR" Content="Guest Request" HorizontalAlignment="Center" Margin="100,10,100,10" VerticalAlignment="Center" Width="580" Height="80" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
-        <Button x:Name="ButtonHU" Content="Hosting Unit" HorizontalAlignment="Center" Margin="100,10,100,10" VerticalAlignment="Bottom" Width="580" Height="80" FontSize="36" Grid.Row="3" Click="ButtonHU_Click"/>
-        <Button x:Name="ButtonAdmin" Content="Admin" HorizontalAlignment="Center" Margin="100,10,100,10" VerticalAlignment="Center" Width="580" Height="80" FontSize="36" Grid.Row="4" VerticalContentAlignment="Center" Click="ButtonAdmin_Click"/>
-        <Label Content="Welcome to the YBY Site" HorizontalAlignment="Center" Margin="57,10,49,0" VerticalAlignment="Top" FontFamily="Rage Italic" FontSize="72"/>
+        <Button x:Name="ButtonGR" Content="Guest Request" Width="580" Height="80" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
+        <Button x:Name="ButtonHU" Content="Hosting Unit" Width="580" Height="80" FontSize="36" Grid.Row="3" Click="ButtonHU_Click"/>
+        <Button x:Name="ButtonAdmin" Content="Admin" Width="580" Height="80" FontSize="36" Grid.Row="4" VerticalContentAlignment="Center" Click="ButtonAdmin_Click"/>
+        <Label Content="Welcome to the YBY Site" Margin="57,10,49,0" VerticalAlignment="Top" FontFamily="Rage Italic" FontSize="72"/>
 
     </Grid>
 </Window>

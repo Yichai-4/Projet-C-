@@ -8,11 +8,12 @@
         Title="UpdateHostingUnit" Height="450" Width="700">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="93*"/>
-            <RowDefinition Height="326*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="319*"/>
         </Grid.RowDefinitions>
-        <Label Content="Update an hosting unit" HorizontalAlignment="Left" Margin="130,10,10,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black"/>
-        <Button Content="UPDATE" HorizontalAlignment="Left" Margin="532,267,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF34F715" FontSize="24" Width="150" Height="49"/>
+        <Label Content="Update an hosting unit" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black" Height="58" Width="416"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" Margin="532,260,0,0" Grid.Row="1" VerticalAlignment="Top" Background="#FF34F715" FontSize="24" Width="150" Height="49"/>
+        <ListBox Grid.Row="1" Width="372" Margin="160,64,160,89"/>
 
     </Grid>
 </Window>
