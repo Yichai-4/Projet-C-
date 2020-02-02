@@ -13,10 +13,10 @@
             <RowDefinition Height="100*"/>
             <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
-        <Button Name="buttonUpdateHU" Content="Update Hosting Unit" HorizontalAlignment="Center" Margin="26,10,16,10" VerticalAlignment="Center" Width="550" Height="72" Grid.Row="1" FontSize="36" Click="buttonUpdateHU_Click"/>
-        <Button Name="buttonDeleteHU" Content="Delete Hosting Unit" HorizontalAlignment="Center" Margin="26,10,16,10" VerticalAlignment="Center" Width="550" Height="73" Grid.Row="3" FontSize="36" Click="buttonDeleteHU_Click"/>
-        <Button Name="buttonOrder" Content="Order" HorizontalAlignment="Center" Margin="26,10,16,10" VerticalAlignment="Center" Width="550" Height="72" Grid.Row="2" FontSize="36" Click="buttonOrder_Click"/>
-        <Label Content="Personal Area" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black" Margin="168,10,168,0"/>
+        <Button Name="buttonUpdateHU" Content="Update Hosting Unit" HorizontalAlignment="Center" Margin="50,10,50,10" VerticalAlignment="Center" Width="492" Height="70" Grid.Row="1" FontSize="36" Click="buttonUpdateHU_Click"/>
+        <Button Name="buttonDeleteHU" Content="Delete Hosting Unit" HorizontalAlignment="Center" Margin="50,10,50,10" VerticalAlignment="Center" Width="492" Height="70" Grid.Row="3" FontSize="36" Click="buttonDeleteHU_Click"/>
+        <Button Name="buttonOrder" Content="Order" HorizontalAlignment="Center" Margin="50,10,50,10" VerticalAlignment="Center" Width="492" Height="70" Grid.Row="2" FontSize="36" Click="buttonOrder_Click"/>
+        <Label Content="Personal Area" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black" Margin="122,10,122,0"/>
 
     </Grid>
 </Window>
