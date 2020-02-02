@@ -8,33 +8,33 @@
         Title="AddHostingUnit" Height="478" Width="600">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="53*"/>
-            <RowDefinition Height="366*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="377*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
-        <Label Content="Add a New Hosting Unit" FontSize="24" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="552" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Height="27" Grid.Row="1"/>
-        <Label Content="Hosting unit name :" HorizontalAlignment="Left" Margin="312,68,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <Label Content="Add a New Hosting Unit" FontSize="24" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Height="42" Margin="148,8,148,20" Width="296"/>
+        <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Left" Height="27" Width="396"/>
+        <Label Content="Hosting unit name :" HorizontalAlignment="Left" Margin="312,68,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="129"/>
         <TextBox Name="tbNameHU"  Text="" HorizontalAlignment="Left" Height="29" Margin="447,68,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
-        <Label Content="Host private name : " HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <Label Content="Host private name : " HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="132"/>
         <TextBox Name="tbHostPName" Text="{Binding Path= PrivateName}"  HorizontalAlignment="Left" Height="29" Margin="170,68,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Host family name : " HorizontalAlignment="Left" Margin="10,111,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <Label Content="Host family name : " HorizontalAlignment="Left" Margin="10,111,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="128"/>
         <TextBox Name="tbHostFName"  Text="{Binding Path= FamilyName}" HorizontalAlignment="Left" Height="29" Margin="170,111,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Phone number :" HorizontalAlignment="Left" Margin="10,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <Label Content="Phone number :" HorizontalAlignment="Left" Margin="10,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="106"/>
         <TextBox Name="tbPhoneNumber" Text="{Binding Path=PhoneNumber}"  HorizontalAlignment="Left" Height="29" Margin="170,157,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Location :" HorizontalAlignment="Left" Margin="312,111,0,0" Grid.Row="1" VerticalAlignment="Top" FontStyle="Italic" FontSize="14"/>
-        <ComboBox Name="cbLocation" HorizontalAlignment="Left" Margin="447,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Mail adress :" HorizontalAlignment="Left" Margin="10,202,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Location :" HorizontalAlignment="Left" Margin="312,111,0,0" Grid.Row="1" VerticalAlignment="Top" FontStyle="Italic" FontSize="14" Height="29" Width="68"/>
+        <ComboBox Name="cbLocation" HorizontalAlignment="Left" Margin="447,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="22"/>
+        <Label Content="Mail adress :" HorizontalAlignment="Left" Margin="10,202,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Height="29" Width="87"/>
         <TextBox Name="tbMail"  Text="{Binding Path=MailAdress}" HorizontalAlignment="Left" Height="29" Margin="170,202,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Bank account number :" HorizontalAlignment="Left" Margin="10,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" TextOptions.TextHintingMode="Animated"/>
+        <Label Content="Bank account number :" HorizontalAlignment="Left" Margin="10,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" TextOptions.TextHintingMode="Animated" Height="29" Width="150"/>
         <TextBox Name="tbBankNumber" Text="" HorizontalAlignment="Left" Height="29" Margin="170,246,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Pool :" HorizontalAlignment="Left" Margin="312,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
-        <CheckBox Content="CollectionClearance " HorizontalAlignment="Left" Margin="10,302,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <Label Content="Pool :" HorizontalAlignment="Left" Margin="312,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Height="29" Width="44"/>
+        <CheckBox Content="CollectionClearance " HorizontalAlignment="Left" Margin="10,302,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="18" Width="144"/>
         <Button Name="ButtonADD" 
             Content="ADD" 
-            HorizontalAlignment="Center" Margin="421,342,25,10" Grid.Row="1" VerticalAlignment="Center" Width="146" FontSize="18" 
+            HorizontalAlignment="Center" Margin="421,330,25,9" Grid.Row="1" VerticalAlignment="Center" Width="146" FontSize="18" 
             FontWeight="Bold" Height="38" Background="#FF27F113" VerticalContentAlignment="Center">
             <!--<Button.Style>
                 <Style>

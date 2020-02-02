@@ -8,8 +8,8 @@
         Title="מערכת  איתור הנופש" Height="650" Width="800" FontSize="20">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="125*"/>
-            <RowDefinition Height="118*"/>
+            <RowDefinition Height="164*"/>
+            <RowDefinition Height="159*"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="100"/>
@@ -17,10 +17,10 @@
         <Grid.Background>
             <ImageBrush ImageSource = "Images/Fond d'écran 1.jpg"/>
         </Grid.Background>
-        <Button x:Name="ButtonGR" Content="Guest Request" Width="580" Height="80" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
-        <Button x:Name="ButtonHU" Content="Hosting Unit" Width="580" Height="80" FontSize="36" Grid.Row="3" Click="ButtonHU_Click"/>
-        <Button x:Name="ButtonAdmin" Content="Admin" Width="580" Height="80" FontSize="36" Grid.Row="4" VerticalContentAlignment="Center" Click="ButtonAdmin_Click"/>
-        <Label Content="Welcome to the YBY Site" Margin="57,10,49,0" VerticalAlignment="Top" FontFamily="Rage Italic" FontSize="72"/>
+        <Button x:Name="ButtonGR" Content="Guest Request" FontSize="36" Grid.Row="2" Click="ButtonGR_Click" HorizontalContentAlignment="Center" UseLayoutRounding="False" Margin="106,11"/>
+        <Button x:Name="ButtonHU" Content="Hosting Unit" FontSize="36" Grid.Row="3" Click="ButtonHU_Click" Margin="106,10"/>
+        <Button x:Name="ButtonAdmin" Content="Admin" FontSize="36" Grid.Row="4" VerticalContentAlignment="Center" Click="ButtonAdmin_Click" Margin="106,10"/>
+        <Label Content="Welcome to the YBY Site" Margin="61,10,53,0" VerticalAlignment="Top" FontFamily="Rage Italic" FontSize="72" HorizontalAlignment="Center" Height="100" Width="678"/>
 
     </Grid>
 </Window>
