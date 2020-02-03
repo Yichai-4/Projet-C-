@@ -31,7 +31,13 @@ namespace PLWPF
             Jerusalem
         }
 
-        
+        public enum SubArea
+        {
+            TelAviv,
+            Jerusalem,
+            Tsfat,
+            Tiberiad
+        }
 
         public enum Type
         {

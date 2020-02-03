@@ -24,7 +24,7 @@
         <Label Content="Area :" HorizontalAlignment="Left" Margin="12,207,0,0" Grid.Row="2" VerticalAlignment="Top" Width="103" FontSize="14" FontStyle="Italic" Height="30" VerticalContentAlignment="Center"/>
         <ComboBox Name="cbArea" HorizontalAlignment="Left" Margin="151,212,0,0" Grid.Row="2" VerticalAlignment="Top" Width="158" Height="25" VerticalContentAlignment="Center"/>
         <Label Content="Sub Area (optional) :" HorizontalAlignment="Left" Margin="12,242,0,0" Grid.Row="2" VerticalAlignment="Top" Width="135" FontSize="14" FontStyle="Italic" Height="30" VerticalContentAlignment="Center"/>
-        <ComboBox Name="SubArea" HorizontalAlignment="Left" Margin="152,249,0,0" Grid.Row="2" VerticalAlignment="Top" Width="158" Height="23" VerticalContentAlignment="Center"/>
+        <ComboBox Name="cbSubArea" HorizontalAlignment="Left" Margin="152,249,0,0" Grid.Row="2" VerticalAlignment="Top" Width="158" Height="23" VerticalContentAlignment="Center"/>
         <Label Content="Type :" HorizontalAlignment="Left" Margin="424,17,0,0" Grid.Row="2" VerticalAlignment="Top" Width="112" FontSize="14" FontStyle="Italic" Height="30" VerticalContentAlignment="Center"/>
         <ComboBox Name="cbType" HorizontalAlignment="Left" Margin="602,24,0,0" Grid.Row="2" VerticalAlignment="Top" Width="146" Height="23" VerticalContentAlignment="Center"/>
         <Label Content="Number of adults :" HorizontalAlignment="Left" Margin="424,52,0,0" Grid.Row="2" VerticalAlignment="Top" Width="135" FontSize="14" FontStyle="Italic" Height="30" VerticalContentAlignment="Center"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PLWPF"
         mc:Ignorable="d"
-        Title="AddHostingUnit" Height="478" Width="600">
+        Title="AddHostingUnit" Height="511" Width="600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70*"/>
@@ -25,15 +25,15 @@
         <Label Content="Phone number :" HorizontalAlignment="Left" Margin="10,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="29" Width="106"/>
         <TextBox Name="tbPhoneNumber" Text="{Binding Path=PhoneNumber}"  HorizontalAlignment="Left" Height="29" Margin="170,157,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Location :" HorizontalAlignment="Left" Margin="312,111,0,0" Grid.Row="1" VerticalAlignment="Top" FontStyle="Italic" FontSize="14" Height="29" Width="68"/>
-        <ComboBox Name="cbLocation" HorizontalAlignment="Left" Margin="447,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="22"/>
+        <ComboBox Name="cbLocation" HorizontalAlignment="Left" Margin="447,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="29"/>
         <Label Content="Mail adress :" HorizontalAlignment="Left" Margin="10,202,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Height="29" Width="87"/>
         <TextBox Name="tbMail"  Text="{Binding Path=MailAdress}" HorizontalAlignment="Left" Height="29" Margin="170,202,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Bank account number :" HorizontalAlignment="Left" Margin="10,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" TextOptions.TextHintingMode="Animated" Height="29" Width="150"/>
+        <Label Content="Bank account number :" HorizontalAlignment="Left" Margin="10,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" TextOptions.TextHintingMode="Animated" Height="29" Width="155" FontStyle="Italic"/>
         <TextBox Name="tbBankNumber" Text="" HorizontalAlignment="Left" Height="29" Margin="170,246,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <CheckBox Content="CollectionClearance " HorizontalAlignment="Left" Margin="10,302,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="18" Width="144"/>
         <Button Name="ButtonADD" 
             Content="ADD" 
-            HorizontalAlignment="Center" Margin="421,330,25,9" Grid.Row="1" VerticalAlignment="Center" Width="146" FontSize="18" 
+            HorizontalAlignment="Center" Margin="436,357,10,10" Grid.Row="1" VerticalAlignment="Center" Width="146" FontSize="18" 
             FontWeight="Bold" Height="38" Background="#FF27F113" VerticalContentAlignment="Center">
             <!--<Button.Style>
                 <Style>
@@ -79,11 +79,14 @@
                 </Style>
             </Button.Style>-->
         </Button>
-        <CheckBox Content="Pool" HorizontalAlignment="Left" Margin="312,217,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
-        <CheckBox Content="Jacuzzi" HorizontalAlignment="Left" Margin="395,217,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
-        <CheckBox Content="Garden" HorizontalAlignment="Left" Margin="483,217,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
-        <CheckBox Content="Attractions for children" HorizontalAlignment="Left" Margin="312,257,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
-        <Label Content="Number of persons :" HorizontalAlignment="Left" Margin="312,160,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="449,163,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <CheckBox Content="Pool" HorizontalAlignment="Left" Margin="312,257,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <CheckBox Content="Jacuzzi" HorizontalAlignment="Left" Margin="396,257,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
+        <CheckBox Content="Garden" HorizontalAlignment="Left" Margin="483,257,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <CheckBox Content="Attractions for children" HorizontalAlignment="Left" Margin="312,288,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" RenderTransformOrigin="0.481,2.5"/>
+        <Label Content="Number of adults :" HorizontalAlignment="Left" Margin="312,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="449,157,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Number of children :" HorizontalAlignment="Left" Margin="312,202,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="449,202,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>

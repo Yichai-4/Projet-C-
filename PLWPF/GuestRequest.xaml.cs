@@ -28,6 +28,7 @@ namespace PLWPF
             cbAttractions.ItemsSource = Enum.GetValues(typeof(Enums.Pool));
             cbArea.ItemsSource = Enum.GetValues(typeof(Enums.Area));
             cbType.ItemsSource = Enum.GetValues(typeof(Enums.Type));
+            cbSubArea.ItemsSource = Enum.GetValues(typeof(Enums.SubArea));
         }
 
         private void ButtonEnter_Click(object sender, RoutedEventArgs e)

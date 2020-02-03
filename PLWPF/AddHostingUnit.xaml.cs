@@ -24,5 +24,6 @@ namespace PLWPF
             InitializeComponent();
             cbLocation.ItemsSource = Enum.GetValues(typeof(Enums.Area));
         }
+
     }
 }
