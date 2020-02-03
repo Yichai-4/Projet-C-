@@ -64,6 +64,9 @@
     <Compile Include="DeleteHostingUnit.xaml.cs">
       <DependentUpon>DeleteHostingUnit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Password.xaml.cs">
+      <DependentUpon>Password.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UpdateHostingUnit.xaml.cs">
       <DependentUpon>UpdateHostingUnit.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Order.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Password.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
