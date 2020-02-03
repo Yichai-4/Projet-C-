@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PLWPF
+namespace WpfApp1
 {
     /// <summary>
-    /// Logique d'interaction pour AddHostingUnit.xaml
+    /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
-    public partial class AddHostingUnit : Window
+    public partial class MainWindow : Window
     {
-        public AddHostingUnit()
+        public MainWindow()
         {
             InitializeComponent();
-            cbLocation.ItemsSource = Enum.GetValues(typeof(Enums.Area));
         }
     }
 }

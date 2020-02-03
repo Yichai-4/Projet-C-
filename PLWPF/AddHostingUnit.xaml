@@ -30,7 +30,6 @@
         <TextBox Name="tbMail"  Text="{Binding Path=MailAdress}" HorizontalAlignment="Left" Height="29" Margin="170,202,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Bank account number :" HorizontalAlignment="Left" Margin="10,246,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" TextOptions.TextHintingMode="Animated" Height="29" Width="150"/>
         <TextBox Name="tbBankNumber" Text="" HorizontalAlignment="Left" Height="29" Margin="170,246,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Pool :" HorizontalAlignment="Left" Margin="312,157,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Height="29" Width="44"/>
         <CheckBox Content="CollectionClearance " HorizontalAlignment="Left" Margin="10,302,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic" Height="18" Width="144"/>
         <Button Name="ButtonADD" 
             Content="ADD" 
@@ -80,5 +79,11 @@
                 </Style>
             </Button.Style>-->
         </Button>
+        <CheckBox Content="Pool" HorizontalAlignment="Left" Margin="312,217,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <CheckBox Content="Jacuzzi" HorizontalAlignment="Left" Margin="395,217,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
+        <CheckBox Content="Garden" HorizontalAlignment="Left" Margin="483,217,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <CheckBox Content="Attractions for children" HorizontalAlignment="Left" Margin="312,257,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <Label Content="Number of persons :" HorizontalAlignment="Left" Margin="312,160,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="449,163,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
     </Grid>
 </Window>
