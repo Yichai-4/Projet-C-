@@ -9,8 +9,8 @@ namespace DAL
 {
     public interface Idal
     {
-        void AddGuestRequest(GuestRequest guestRequest); // הוספת דרישת לקוח
-        void UpdateGuestRequest(GuestRequest guestRequest); // עדכון דרישת לקוח 
+        void AddGuestrequest(GuestRequest guestRequest); // הוספת דרישת לקוח
+        void GuestrequestUpdate(GuestRequest guestRequest); // עדכון דרישת לקוח 
 
         void AddHostingUnit(HostingUnit hostingUnit); // הוספת יחידת אירוח 
         bool DeleteHostingUnit(int myhostingUnitKey); // מחיקת יחידת אירוח 
@@ -18,9 +18,9 @@ namespace DAL
 
         void AddOrder(Order order); // הוספת הזמנה 
         void UpdateOrder(Order order); // עדכון הזמנה 
-        List<HostingUnit> GetListAllHostingUnits(List<HostingUnit> hostingUnits); // קבלת רשימת כל יחידות האירוח 
-        List<GuestRequest> GetListAllGuestRequests(List<GuestRequest> guestRequests); // קבלת רשימת כל דרישות הלקוחות 
-        List<Order> GetListAllOrders(List<Order> orders); // קבלת רשימת כל ההזמנות
-        List<BankBranch> GetListAllBankBranches(List<BankBranch> bankBranches); // קבלת רשימת כל סניפי הבנק הקיימים בארץ 
+        List<HostingUnit> ListOfHostingUnits(List<HostingUnit> hostingUnits); // קבלת רשימת כל יחידות האירוח 
+        List<GuestRequest> ListOfGuestRequests(List<GuestRequest> guestRequests); // קבלת רשימת כל דרישות הלקוחות 
+        List<Order> ListOfOrders(List<Order> orders); // קבלת רשימת כל ההזמנות
+        List<BankBranch> ListOfBankBranches(List<BankBranch> bankBranches); // קבלת רשימת כל סניפי הבנק הקיימים בארץ 
     }
 }

@@ -42,6 +42,8 @@ namespace BL
 
         public bool Banq_Ishur(GuestRequest client)
         {
+           
+
             return false;
         }
         #region date
