@@ -22,8 +22,14 @@ namespace PLWPF
         public AddHostingUnit()
         {
             InitializeComponent();
-            cbLocation.ItemsSource = Enum.GetValues(typeof(Enums.Area));
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Data.CollectionViewSource hostingUnitViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("hostingUnitViewSource")));
+            // Charger les données en définissant la propriété CollectionViewSource.Source :
+            // hostingUnitViewSource.Source = [source de données générique]
+        }
     }
 }

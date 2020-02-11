@@ -15,25 +15,18 @@ using System.Windows.Shapes;
 namespace PLWPF
 {
     /// <summary>
-    /// Logique d'interaction pour HostingUnit.xaml
+    /// Logique d'interaction pour Password.xaml
     /// </summary>
-    public partial class HostingUnit : Window
+    public partial class Password : Window
     {
-        public HostingUnit()
+        public Password()
         {
             InitializeComponent();
-            //cbHostingUnit.ItemsSource = Enum.GetValues(typeof(Enums.HostingUnit));
         }
 
-        private void buttonAddHU_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new AddHostingUnit().ShowDialog();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            new Password().ShowDialog();
+            new PersonalArea().ShowDialog();
         }
     }
-
 }

@@ -25,8 +25,9 @@ namespace BE
         public string Jacuzzi { get; set; } // האם מעוניין בגקוזי 
         public string Garden { get; set; } // האם מעוניין בגינה 
         public string ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
-        //public string Synagogue { get; set; }
-        //public string FitnessRoom { get; set; }
+        public string Synagogue { get; set; }
+        public string FitnessRoom { get; set; }
+        public string PhoneNumber { get; set; }
 
         //string ToString;
 
