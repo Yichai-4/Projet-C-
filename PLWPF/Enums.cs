@@ -8,13 +8,6 @@ namespace PLWPF
 {
     class Enums
     {
-        public enum HostingUnit
-        {
-            Add,
-            Update,
-            Delete
-        }
-
         public enum Pool
         {
             Necessary,
@@ -52,6 +45,15 @@ namespace PLWPF
             Add,
             Update
         }
+
+        public enum Location
+        {
+            North,
+            South,
+            Center,
+            Jerusalem
+        }
+
         public enum Status
         {
             Not_yet_treated,

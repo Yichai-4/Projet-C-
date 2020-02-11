@@ -7,7 +7,7 @@ using BE;
 
 namespace BL
 {
-    interface IBL
+    public interface IBL
     {
         void StatusModify(GuestRequest status);
         void AddOrder(GuestRequest requete,HostingUnit myHostingUnit);

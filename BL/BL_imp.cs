@@ -34,9 +34,9 @@ namespace BL
           //  instance.AddOrder();
         }
 
-        public bool addrequest(GuestRequest getRequest)
+        public bool addrequest(GuestRequest guestRequest)
         {
-            instance.AddGuestRequest(getRequest);
+            instance.AddGuestRequest(guestRequest);
             return true;
         }
 

@@ -64,6 +64,9 @@
     <Compile Include="DeleteHostingUnit.xaml.cs">
       <DependentUpon>DeleteHostingUnit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="exemple.xaml.cs">
+      <DependentUpon>exemple.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Password.xaml.cs">
       <DependentUpon>Password.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DeleteHostingUnit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="exemple.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,6 +171,20 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\BE.BankBranch.datasource" />
+    <None Include="Properties\DataSources\BE.BE.datasource" />
+    <None Include="Properties\DataSources\BE.Configuration.datasource" />
+    <None Include="Properties\DataSources\BE.enum_s+Area.datasource" />
+    <None Include="Properties\DataSources\BE.enum_s+HostingUnit.datasource" />
+    <None Include="Properties\DataSources\BE.enum_s+Order.datasource" />
+    <None Include="Properties\DataSources\BE.enum_s+Pool.datasource" />
+    <None Include="Properties\DataSources\BE.enum_s+Status.datasource" />
+    <None Include="Properties\DataSources\BE.enum_s+Type.datasource" />
+    <None Include="Properties\DataSources\BE.enum_s.datasource" />
+    <None Include="Properties\DataSources\BE.GuestRequest.datasource" />
+    <None Include="Properties\DataSources\BE.Host.datasource" />
+    <None Include="Properties\DataSources\BE.HostingUnit.datasource" />
+    <None Include="Properties\DataSources\BE.Order.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
