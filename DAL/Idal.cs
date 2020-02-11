@@ -7,7 +7,7 @@ using BE;
 
 namespace DAL
 {
-    public interface Idal
+    public interface IDAL
     {
         void AddGuestRequest(GuestRequest guestRequest); // הוספת דרישת לקוח
         void UpdateGuestRequest(GuestRequest guestRequest); // עדכון דרישת לקוח 

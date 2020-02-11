@@ -7,10 +7,10 @@ using BE;
 using DAL;
 using DS;
 
-namespace DAl
+namespace DAL
 {
     //refair les list: il faut qu'il  return et pas autre 
-    public class Dal_imp : Idal
+    public class Dal_imp : IDAL
     {
         #region add
         public void AddGuestRequest(GuestRequest guestRequest)

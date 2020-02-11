@@ -12,29 +12,25 @@ namespace BL
 {
     class BL_imp : IBL
     {
-        Idal instance = dalfactory.Instance;
+        IDAL instance = FactoryDAL.Instance;
 
-        public bool addhostingunit(HostingUnit hostingUnit)
+        public bool AddHostingUnit(HostingUnit hostingUnit)
         {
             instance.AddHostingUnit(hostingUnit);
             return true;
 
         }
 
-        public void AddOrder(GuestRequest requete,HostingUnit myHostingUnit )
+        public void AddOrder(GuestRequest request,HostingUnit myHostingUnit )
         {
             List<Order> best = new List<Order>();
             var compatible2 = from g in DataSource.lorders
-                              where g.GuestRequestKey == requete.GuestRequestKey
+                              where g.GuestRequestKey == request.GuestRequestKey
                               select g;
-                        //  instance.AddOrder();
-        }
-        public void AddOrder( )
-        {
-          //  instance.AddOrder();
+            //instance.AddOrder();
         }
 
-        public bool addrequest(GuestRequest guestRequest)
+        public bool AddRequest(GuestRequest guestRequest)
         {
             instance.AddGuestRequest(guestRequest);
             return true;
@@ -86,17 +82,17 @@ namespace BL
             throw new NotImplementedException();
         }
 
-        public Order GetOrder(int myOrder)
-        {
-            return DataSource.lorders.FirstOrDefault(o => o.OrderKey == myOrder);
-        }
+        //public Order GetOrder(int myOrder)
+        //{
+        //    return DataSource.lorders.FirstOrDefault(o => o.OrderKey == myOrder);
+        //}
 
-        public string GetOrders(int id)
+        public string GetOrder(int id)
         {
             throw new NotImplementedException();
         }
         #endregion
-        public bool HostingUnitModify(HostingUnit hostingUnit)
+        public bool UpdateHostingUnit(HostingUnit hostingUnit)
         {
             throw new NotImplementedException();
         }
@@ -126,7 +122,7 @@ namespace BL
             return best;
         }
 
-        public bool releasehostingunit(HostingUnit hostingUnit)
+        public bool DeleteHostingUnit(HostingUnit hostingUnit)
         {
             throw new NotImplementedException();
         }
@@ -140,7 +136,7 @@ namespace BL
 
         }
 
-        public void StatusModify(GuestRequest status)
+        public void UpdateStatus(GuestRequest status)
         {
             throw new NotImplementedException();
         }

@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
 
-namespace BL
+namespace DAL
 {
-     public class Factory
+    public class FactoryDAL
     {
-        private static IBL instance = null;
-        int x;
-        static Factory() { }
-        public static IBL Instance
+        private static IDAL instance = null;
+        static FactoryDAL() { }
+
+        public static IDAL Instance
         {
             get
             {
                 if (instance == null)
-                {
-                    instance = new BL_imp();
-                }
+                    instance = new Dal_imp();
+
                 return instance;
             }
         }
