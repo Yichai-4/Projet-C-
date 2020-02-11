@@ -13,7 +13,7 @@ namespace DAl
     public class Dal_imp : Idal
     {
         #region add
-        public void AddGuestrequest(GuestRequest guestRequest)
+        public void AddGuestRequest(GuestRequest guestRequest)
         {
             if (DataSource.lguestRequests.Exists(x => guestRequest.GuestRequestKey == x.GuestRequestKey))
                 throw new Exception("guestRequest with the same GuestRequestKey  founded !!!");
@@ -101,7 +101,7 @@ namespace DAl
 
 
         #region udapte
-        public void GuestrequestUpdate(GuestRequest myguestRequest)//linq
+        public void UpdateGuestRequest(GuestRequest myguestRequest)//linq
         {
             if (DataSource.lguestRequests.Exists(x => myguestRequest.GuestRequestKey == x.GuestRequestKey))
             {

@@ -9,8 +9,8 @@ namespace DAL
 {
     public interface Idal
     {
-        void AddGuestrequest(GuestRequest guestRequest); // הוספת דרישת לקוח
-        void GuestrequestUpdate(GuestRequest guestRequest); // עדכון דרישת לקוח 
+        void AddGuestRequest(GuestRequest guestRequest); // הוספת דרישת לקוח
+        void UpdateGuestRequest(GuestRequest guestRequest); // עדכון דרישת לקוח 
 
         void AddHostingUnit(HostingUnit hostingUnit); // הוספת יחידת אירוח 
         bool DeleteHostingUnit(int myhostingUnitKey); // מחיקת יחידת אירוח 
