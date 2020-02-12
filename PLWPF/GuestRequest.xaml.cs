@@ -68,7 +68,7 @@ namespace PLWPF
             {
                 MessageBox.Show(ex.Message);
             }
-         
+
             //if (int.Parse(tbAdults.Text) < 0 || int.Parse(tbChildren.Text) < 0)
             //    MessageBox.Show("Number of adults can't be negative", "ERROR", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             this.Close();

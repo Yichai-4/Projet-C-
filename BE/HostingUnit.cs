@@ -13,31 +13,45 @@ namespace BE
             get { return HostingUnitKey; }
             set { HostingUnitKey = Configuration.key++; }
         }
-
         public Host Owner;
+        public string HostingUnitName { get; set; }
+        public Enums.Location Area { get; set; } // אזור הנופש הרצוי בארץ
+        public Enums.SubArea SubArea { get; set; } //  תת-איזור רצוי
+        public Enums.Type Type { get; set; } // סוג יחידת האירוח הרצוי
+        public int NumAdults { get; set; } // מספר המבוגרים
+        public int NumChildren { get; set; } // מספר ילדים
+        public bool Pool { get; set; } // האם מעוניין בבריכה
+        public bool Jacuzzi { get; set; } // האם מעוניין בגקוזי 
+        public bool Garden { get; set; } // האם מעוניין בגינה 
+        public bool ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
+        public bool Synagogue { get; set; }
+        public bool FitnessRoom { get; set; }
+        public bool[,] Diary = new bool[12, 31]; // Creates an initialized boolean matrix in FALSE:
+
         public int nomberOfPersons;
         public int numOfRooms;
         public string type;
-
-        public string Status { get; set; } // סטטוס בקשת האירוח 
-        public DateTime RegistrationDate { get; set; } // תאריך רישום למערכת 
+        public Enums.Status Status { get; set; } // סטטוס בקשת האירוח 
         public DateTime EntryDate { get; set; } // תאריך רצוי לתחילת  הנופש 
-        public string ReleaseDate { get; set; } // תאריך רצוי לסיום הנופש 
-        public string Area { get; set; } // אזור הנופש הרצוי בארץ
-        public string SubArea { get; set; } //  תת-איזור רצוי
-        public string Type { get; set; } // סוג יחידת האירוח הרצוי
-        public int NumAdults { get; set; } // מספר המבוגרים
-        public int NumChildren { get; set; } // מספר ילדים
-        public string Pool { get; set; } // האם מעוניין בבריכה
-        public string Jacuzzi { get; set; } // האם מעוניין בגקוזי 
-        public string Garden { get; set; } // האם מעוניין בגינה 
-        public string ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
-        public string Synagogue { get; set; }
-        public string FitnessRoom { get; set; }
+        public DateTime ReleaseDate { get; set; } // תאריך רצוי לסיום הנופש 
 
-        public string HostingUnitName { get; set; }
-
-        // Creates an initialized boolean matrix in FALSE:
-        public bool[,] Diary = new bool[12, 31];
+        public void ToString()
+        {
+            Console.WriteLine("Hosting unit key: " + HostingUnitKey);
+            Console.WriteLine("Status: " + Status);
+            Console.WriteLine("Entry date: " + EntryDate);
+            Console.WriteLine("Release date: " + ReleaseDate);
+            Console.WriteLine("Area: " + Area);
+            Console.WriteLine("SubArea: " + SubArea);
+            Console.WriteLine("Type: " + Type);
+            Console.WriteLine("Adults: " + NumAdults);
+            Console.WriteLine("Children: " + NumChildren);
+            Console.WriteLine("Pool: " + Pool);
+            Console.WriteLine("Jacuzzi: " + Jacuzzi);
+            Console.WriteLine("Garden: " + Garden);
+            Console.WriteLine("Children attractions: " + ChildrenAttractions);
+            Console.WriteLine("Synagogue: " + Synagogue);
+            Console.WriteLine("Fitness room: " + FitnessRoom);
+        }
     }
 }

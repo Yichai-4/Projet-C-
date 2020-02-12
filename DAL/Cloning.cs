@@ -35,7 +35,7 @@ namespace DAL
 
                 FamilyName = original.FamilyName,
 
-                MailAdress = original.MailAdress,
+                MailAddress = original.MailAddress,
 
                 Status = original.Status,
 

@@ -36,7 +36,7 @@ namespace BL
             return true;
         }
 
-        public bool Banq_Ishur(GuestRequest )
+        public bool Banq_Ishur(GuestRequest guest)
         {
            
 
@@ -129,7 +129,7 @@ namespace BL
 
         public bool sent_mail(GuestRequest a)
         {
-            //if (a.permission == true)
+            //if (a.Permission == true)
             //    return true;
             //else
                 return false;
