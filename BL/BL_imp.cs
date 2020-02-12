@@ -107,8 +107,8 @@ namespace BL
 
             List<HostingUnit> best = new List<HostingUnit>();
             var compatible2 = from g in DataSource.lhostingUnits
-                              where g.Area == request.Area && g.NumChildren <= request.Children && g.NumAdults <= request.Adults && g.Pool == request.Pool && g.Jacuzzi == request.Jacuzzi &&
-                              g.ChildrenAttractions == request.ChildrenAttractions && g.Garden == request.Garden
+                              where g.Area == request.Area && g.NumChildren <= request.Children && g.NumAdults <= request.Adults && g.Pool && 
+                              g.Jacuzzi && g.ChildrenAttractions && g.Garden
                               select g;
 
             foreach (HostingUnit item in compatible2)

@@ -15,7 +15,7 @@ namespace BE
         }
         public Host Owner;
         public string HostingUnitName { get; set; }
-        public Enums.Location Area { get; set; } // אזור הנופש הרצוי בארץ
+        public Enums.Area Area { get; set; } // אזור הנופש הרצוי בארץ
         public Enums.SubArea SubArea { get; set; } //  תת-איזור רצוי
         public Enums.Type Type { get; set; } // סוג יחידת האירוח הרצוי
         public int NumAdults { get; set; } // מספר המבוגרים
@@ -32,6 +32,7 @@ namespace BE
         public int numOfRooms;
         public string type;
         public Enums.Status Status { get; set; } // סטטוס בקשת האירוח 
+        public string RegistrationDate { get; set; } // תאריך רישום למערכת 
         public DateTime EntryDate { get; set; } // תאריך רצוי לתחילת  הנופש 
         public DateTime ReleaseDate { get; set; } // תאריך רצוי לסיום הנופש 
 
