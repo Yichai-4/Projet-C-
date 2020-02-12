@@ -69,9 +69,6 @@
     <Compile Include="DeleteHostingUnit.xaml.cs">
       <DependentUpon>DeleteHostingUnit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="exemple.xaml.cs">
-      <DependentUpon>exemple.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Password.xaml.cs">
       <DependentUpon>Password.xaml</DependentUpon>
     </Compile>
@@ -101,10 +98,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="exemple.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="GuestRequest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -124,7 +117,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Enums.cs" />
     <Compile Include="GuestRequest.xaml.cs">
       <DependentUpon>GuestRequest.xaml</DependentUpon>
     </Compile>

@@ -36,7 +36,7 @@ namespace BL
             return true;
         }
 
-        public bool Banq_Ishur(GuestRequest client)
+        public bool Banq_Ishur(GuestRequest )
         {
            
 
@@ -102,21 +102,21 @@ namespace BL
             throw new NotImplementedException();
         }
 
-        public List<HostingUnit> proposition(GuestRequest requete)//verifi si ce qui est demande exist et le selectionne
+        public List<HostingUnit> proposition(GuestRequest request)//verifi si ce qui est demande exist et le selectionne
         {
 
             List<HostingUnit> best = new List<HostingUnit>();
             var compatible2 = from g in DataSource.lhostingUnits
-                              where g.Area == requete.Area && g.NumChildren <= requete.Children && g.NumAdults <= requete.Adults && g.Pool == requete.Pool && g.Jacuzzi == requete.Jacuzzi &&
-                              g.ChildrenAttractions == requete.ChildrenAttractions && g.Garden == requete.Garden
+                              where g.Area == request.Area && g.NumChildren <= request.Children && g.NumAdults <= request.Adults && g.Pool == request.Pool && g.Jacuzzi == request.Jacuzzi &&
+                              g.ChildrenAttractions == request.ChildrenAttractions && g.Garden == request.Garden
                               select g;
 
             foreach (HostingUnit item in compatible2)
             {
-                if (CheckDate(requete, item) == true)//verifie les possibilite en fonction de la demande 
+                if (CheckDate(request, item) == true)//verifie les possibilite en fonction de la demande 
                 {
                     best.Add(item);
-                    AddOrder(requete, item);
+                    AddOrder(request, item);
                 }
             }
             return best;
