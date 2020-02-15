@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BL;
 
+
 namespace PLWPF
 {
     /// <summary>
@@ -55,9 +56,11 @@ namespace PLWPF
             fitnessRoomComboBox.ItemsSource = Enum.GetValues(typeof(Enums.Pool));
         }
 
+        
+
         private void ButtonEnter_Click(object sender, RoutedEventArgs e)
         {
-            instance.addrequest(myVar);
+            //instance.addrequest(myVar);
             //if (int.Parse(tbAdults.Text) < 0 || int.Parse(tbChildren.Text) < 0)
             //    MessageBox.Show("Number of adults can't be negative", "ERROR", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             this.Close();

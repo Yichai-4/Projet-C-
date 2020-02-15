@@ -63,5 +63,32 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+       
+
+        public void GuestRequestUpdate(GuestRequest guestRequest)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<HostingUnit> ListOfHostingUnits(List<HostingUnit> hostingUnits)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<GuestRequest> ListOfGuestRequests(List<GuestRequest> guestRequests)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Order> ListOfOrders(List<Order> orders)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<BankBranch> ListOfBankBranches(List<BankBranch> bankBranches)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
