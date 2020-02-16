@@ -32,7 +32,7 @@ namespace BL
 
         public bool AddRequest(GuestRequest guestRequest)
         {
-            //instance.AddGuestRequest(guestRequest);
+            instance.AddGuestRequest(guestRequest);
             return true;
         }
 
