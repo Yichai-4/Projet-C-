@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class DAL : Idal
+    public class DAL : IDAL
     {
         public void AddGuestRequest(GuestRequest guestRequest)
         {
@@ -29,21 +29,6 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public List<HostingUnit> GetListAllHostingUnits(List<HostingUnit> hostingUnits)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<BankBranch> GetListAllBankBranches(List<BankBranch> bankBranches)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Order> GetListAllOrders(List<Order> orders)
-        {
-            throw new NotImplementedException();
-        }
-
         public void UpdateGuestRequest(GuestRequest guestRequest)
         {
             throw new NotImplementedException();
@@ -54,12 +39,27 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public List<GuestRequest> GetListAllGuestRequests(List<GuestRequest> guestRequests)
+        public void UpdateOrder(Order order)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateOrder(Order order)
+        public List<HostingUnit> ListOfHostingUnits(List<HostingUnit> hostingUnits)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<GuestRequest> ListOfGuestRequests(List<GuestRequest> guestRequests)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Order> ListOfOrders(List<Order> orders)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<BankBranch> ListOfBankBranches(List<BankBranch> bankBranches)
         {
             throw new NotImplementedException();
         }

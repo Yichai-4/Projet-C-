@@ -1,18 +1,18 @@
-﻿using DAl;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
 
 namespace DAL
 {
-    public class dalfactory
+    public class FactoryDAL
     {
+        private static IDAL instance = null;
+        static FactoryDAL() { }
 
-        private static Idal instance = null;
-        static dalfactory() { }
-        public static Idal Instance
+        public static IDAL Instance
         {
             get
             {

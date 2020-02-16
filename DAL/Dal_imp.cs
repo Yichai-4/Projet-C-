@@ -7,10 +7,10 @@ using BE;
 using DAL;
 using DS;
 
-namespace DAl
+namespace DAL
 {
     //refair les list: il faut qu'il  return et pas autre 
-    public class Dal_imp : Idal
+    public class Dal_imp : IDAL
     {
         #region add
         public void AddGuestRequest(GuestRequest guestRequest)
@@ -101,7 +101,7 @@ namespace DAl
 
 
         #region udapte
-        public void GuestRequestUpdate(GuestRequest myguestRequest)//linq
+        public void UpdateGuestRequest(GuestRequest myguestRequest)//linq
         {
             if (DataSource.lguestRequests.Exists(x => myguestRequest.GuestRequestKey == x.GuestRequestKey))
             {

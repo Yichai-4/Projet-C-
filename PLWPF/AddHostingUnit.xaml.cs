@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BE;
 
 namespace PLWPF
 {
@@ -22,14 +23,11 @@ namespace PLWPF
         public AddHostingUnit()
         {
             InitializeComponent();
-        }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
+            areaComboBox.ItemsSource = Enum.GetValues(typeof(Enums.Location));
+            subAreaComboBox.ItemsSource = Enum.GetValues(typeof(Enums.SubArea));
+            typeComboBox.ItemsSource = Enum.GetValues(typeof(Enums.Type));
 
-            System.Windows.Data.CollectionViewSource hostingUnitViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("hostingUnitViewSource")));
-            // Charger les données en définissant la propriété CollectionViewSource.Source :
-            // hostingUnitViewSource.Source = [source de données générique]
         }
     }
 }

@@ -12,35 +12,31 @@ namespace BL
 {
     class BL_imp : IBL
     {
-        Idal instance = dalfactory.Instance;
+        IDAL instance = FactoryDAL.Instance;
 
-        public bool addhostingunit(HostingUnit hostingUnit)
+        public bool AddHostingUnit(HostingUnit hostingUnit)
         {
             instance.AddHostingUnit(hostingUnit);
             return true;
 
         }
 
-        public void AddOrder(GuestRequest requete,HostingUnit myHostingUnit )
+        public void AddOrder(GuestRequest request,HostingUnit myHostingUnit )
         {
             List<Order> best = new List<Order>();
             var compatible2 = from g in DataSource.lorders
-                              where g.GuestRequestKey == requete.GuestRequestKey
+                              where g.GuestRequestKey == request.GuestRequestKey
                               select g;
-                        //  instance.AddOrder();
-        }
-        public void AddOrder( )
-        {
-          //  instance.AddOrder();
+            //instance.AddOrder();
         }
 
-        public bool addrequest(GuestRequest guestRequest)
+        public bool AddRequest(GuestRequest guestRequest)
         {
             //instance.AddGuestRequest(guestRequest);
             return true;
         }
 
-        public bool Banq_Ishur(GuestRequest client)
+        public bool Banq_Ishur(GuestRequest guest)
         {
            
 
@@ -86,17 +82,17 @@ namespace BL
             throw new NotImplementedException();
         }
 
-        public Order GetOrder(int myOrder)
-        {
-            return DataSource.lorders.FirstOrDefault(o => o.OrderKey == myOrder);
-        }
+        //public Order GetOrder(int myOrder)
+        //{
+        //    return DataSource.lorders.FirstOrDefault(o => o.OrderKey == myOrder);
+        //}
 
-        public string GetOrders(int id)
+        public string GetOrder(int id)
         {
             throw new NotImplementedException();
         }
         #endregion
-        public bool HostingUnitModify(HostingUnit hostingUnit)
+        public bool UpdateHostingUnit(HostingUnit hostingUnit)
         {
             throw new NotImplementedException();
         }
@@ -106,41 +102,41 @@ namespace BL
             throw new NotImplementedException();
         }
 
-        public List<HostingUnit> proposition(GuestRequest requete)//verifi si ce qui est demande exist et le selectionne
+        public List<HostingUnit> proposition(GuestRequest request)//verifi si ce qui est demande exist et le selectionne
         {
 
             List<HostingUnit> best = new List<HostingUnit>();
             var compatible2 = from g in DataSource.lhostingUnits
-                              where g.Area == requete.Area && g.NumChildren <= requete.Children && g.NumAdults <= requete.Adults && g.Pool == requete.Pool && g.Jacuzzi == requete.Jacuzzi &&
-                              g.ChildrenAttractions == requete.ChildrenAttractions && g.Garden == requete.Garden
+                              where g.Area == request.Area && g.NumChildren <= request.Children && g.NumAdults <= request.Adults && g.Pool && 
+                              g.Jacuzzi && g.ChildrenAttractions && g.Garden
                               select g;
 
             foreach (HostingUnit item in compatible2)
             {
-                if (CheckDate(requete, item) == true)//verifie les possibilite en fonction de la demande 
+                if (CheckDate(request, item) == true)//verifie les possibilite en fonction de la demande 
                 {
                     best.Add(item);
-                    AddOrder(requete, item);
+                    AddOrder(request, item);
                 }
             }
             return best;
         }
 
-        public bool releasehostingunit(HostingUnit hostingUnit)
+        public bool DeleteHostingUnit(HostingUnit hostingUnit)
         {
             throw new NotImplementedException();
         }
 
         public bool sent_mail(GuestRequest a)
         {
-            //if (a.permission == true)
+            //if (a.Permission == true)
             //    return true;
             //else
                 return false;
 
         }
 
-        public void StatusModify(GuestRequest status)
+        public void UpdateStatus(GuestRequest status)
         {
             throw new NotImplementedException();
         }

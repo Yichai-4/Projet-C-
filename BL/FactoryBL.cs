@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BL
 {
-     public class Factory
+     public class FactoryBL
     {
         private static IBL instance = null;
-        int x;
-        static Factory() { }
+        //int x;
+        //static FactoryBL() { }
         public static IBL Instance
         {
             get

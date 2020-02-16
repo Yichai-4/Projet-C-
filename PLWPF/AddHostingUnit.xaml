@@ -6,10 +6,7 @@
         xmlns:local="clr-namespace:PLWPF"
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PLWPF.AddHostingUnit"
         mc:Ignorable="d"
-        Title="AddHostingUnit" Height="511" Width="478.5" Loaded="Window_Loaded">
-    <Window.Resources>
-        <CollectionViewSource x:Key="hostingUnitViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:HostingUnit}, CreateList=True}"/>
-    </Window.Resources>
+        Title="AddHostingUnit" Height="511" Width="478.5">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70*"/>
@@ -79,7 +76,7 @@
             </Button.Style>-->
         </Button>
 
-        <Grid x:Name="grid1" DataContext="{StaticResource hostingUnitViewSource}" HorizontalAlignment="Left" Margin="316,75,0,0" Grid.Row="1" VerticalAlignment="Top">
+        <Grid x:Name="grid1" HorizontalAlignment="Left" Margin="316,75,0,0" Grid.Row="1" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -102,7 +99,7 @@
             <Label Content="Synagogue:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="4" VerticalAlignment="Center"/>
             <CheckBox x:Name="synagogueCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding Synagogue, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="4" VerticalAlignment="Center"/>
         </Grid>
-        <Grid x:Name="grid2" DataContext="{StaticResource hostingUnitViewSource}" HorizontalAlignment="Left" Margin="10,192,0,0" Grid.Row="1" VerticalAlignment="Top">
+        <Grid x:Name="grid2"  HorizontalAlignment="Left" Margin="10,192,0,0" Grid.Row="1" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -113,7 +110,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="Area:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <ComboBox x:Name="areaComboBox" Grid.Column="1" DisplayMemberPath="Area" HorizontalAlignment="Left" Height="Auto" ItemsSource="{Binding}" Margin="3" Grid.Row="0" VerticalAlignment="Center" Width="120">
+            <ComboBox x:Name="areaComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="Auto" ItemsSource="{Binding}" Margin="3" Grid.Row="0" VerticalAlignment="Center" Width="120">
                 <ComboBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <VirtualizingStackPanel/>
@@ -121,7 +118,7 @@
                 </ComboBox.ItemsPanel>
             </ComboBox>
             <Label Content="Sub Area:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="1" VerticalAlignment="Center"/>
-            <ComboBox x:Name="subAreaComboBox" Grid.Column="1" DisplayMemberPath="SubArea" HorizontalAlignment="Left" Height="Auto" ItemsSource="{Binding}" Margin="3" Grid.Row="1" VerticalAlignment="Center" Width="120">
+            <ComboBox x:Name="subAreaComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="Auto" ItemsSource="{Binding}" Margin="3" Grid.Row="1" VerticalAlignment="Center" Width="120">
                 <ComboBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <VirtualizingStackPanel/>
@@ -129,7 +126,7 @@
                 </ComboBox.ItemsPanel>
             </ComboBox>
             <Label Content="Type:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="2" VerticalAlignment="Center"/>
-            <ComboBox x:Name="typeComboBox" Grid.Column="1" DisplayMemberPath="Type" HorizontalAlignment="Left" Height="Auto" ItemsSource="{Binding}" Margin="3" Grid.Row="2" VerticalAlignment="Center" Width="120">
+            <ComboBox x:Name="typeComboBox" Grid.Column="1" HorizontalAlignment="Left" Height="Auto" ItemsSource="{Binding}" Margin="3" Grid.Row="2" VerticalAlignment="Center" Width="120">
                 <ComboBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <VirtualizingStackPanel/>
@@ -137,7 +134,7 @@
                 </ComboBox.ItemsPanel>
             </ComboBox>
         </Grid>
-        <Grid x:Name="grid3" DataContext="{StaticResource hostingUnitViewSource}" HorizontalAlignment="Left" Margin="10,75,0,0" Grid.Row="1" VerticalAlignment="Top">
+        <Grid x:Name="grid3" HorizontalAlignment="Left" Margin="10,75,0,0" Grid.Row="1" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>

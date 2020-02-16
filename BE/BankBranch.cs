@@ -13,7 +13,16 @@ namespace BE
         public int BranchNumber { get; set; }
         public string BranchAddress { get; set; }
         public string BranchCity { get; set; }
+        public bool Permission { get; set; } // A quoi ça sert stp ????
 
-        public bool permission { get; set; }
+        public void ToString()
+        {
+            Console.WriteLine("Bank number: " + BankNumber);
+            Console.WriteLine("Bank name: " + BankName);
+            Console.WriteLine("Branch number: " + BranchNumber);
+            Console.WriteLine("Branch address: " + BranchAddress);
+            Console.WriteLine("Branch city: " + BranchCity);
+            Console.WriteLine("Permission: " + Permission);
+        }
     }
 }

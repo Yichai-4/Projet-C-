@@ -15,6 +15,5 @@ namespace BE
         public static int key = 100000000;
 
         public static int key1 = 100000000;
-
     }
 }

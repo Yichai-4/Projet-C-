@@ -44,7 +44,7 @@
     <Compile Include="BankBranch.cs" />
     <Compile Include="BE.cs" />
     <Compile Include="Configuration.cs" />
-    <Compile Include="enum_s.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="GuestRequest.cs" />
     <Compile Include="Host.cs" />
     <Compile Include="HostingUnit.cs" />
