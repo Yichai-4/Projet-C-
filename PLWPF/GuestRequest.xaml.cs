@@ -30,8 +30,7 @@ namespace PLWPF
             InitializeComponent();
 
             guest = new BE.GuestRequest();
-            this.DataContext = guest;
-
+            this.AddGRGrid.DataContext = guest;
             bl = BL.FactoryBL.Instance;
 
             typeComboBox.SelectedIndex = 0;
@@ -61,8 +60,12 @@ namespace PLWPF
             {
                 bl.AddRequest(guest);
                 guest = new BE.GuestRequest();
-                this.DataContext = guest;
+                this.AddGRGrid.DataContext = guest;
 
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("check your input and try again");
             }
             catch (Exception ex)
             {
@@ -73,5 +76,6 @@ namespace PLWPF
             //    MessageBox.Show("Number of adults can't be negative", "ERROR", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             this.Close();
         }
+
     }
 }

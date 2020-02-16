@@ -33,7 +33,7 @@ namespace BE
         public Enums.Pool ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
         public Enums.Pool Synagogue { get; set; }
         public Enums.Pool FitnessRoom { get; set; }
-        public Enums.Pool PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         public GuestRequest()
         {

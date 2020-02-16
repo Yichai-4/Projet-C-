@@ -8,7 +8,7 @@ namespace BL
 {
      public class FactoryBL
     {
-        private static IBL instance = null;
+        static IBL instance = null;
         //int x;
         //static FactoryBL() { }
         public static IBL Instance
