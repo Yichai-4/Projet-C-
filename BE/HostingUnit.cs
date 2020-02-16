@@ -37,9 +37,9 @@ namespace BE
         public DateTime EntryDate { get; set; } // תאריך רצוי לתחילת  הנופש 
         public DateTime ReleaseDate { get; set; } // תאריך רצוי לסיום הנופש 
 
-        HostingUnit()
+        public HostingUnit()
         {
-            this._HostingUnitKey=Configuration.key
+            this._HostingUnitKey = Configuration.key;
         }
         public void ToString()
         {
