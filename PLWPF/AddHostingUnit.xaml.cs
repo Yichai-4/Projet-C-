@@ -20,15 +20,15 @@ namespace PLWPF
     /// </summary>
     public partial class AddHostingUnit : Window
     {
-        BE.GuestRequest guest;
+        BE.HostingUnit unit;
         BL.IBL bl;
 
         public AddHostingUnit()
         {
             InitializeComponent();
 
-            guest = new BE.GuestRequest();
-            this.AddHUGrid.DataContext = guest;
+            unit = new BE.HostingUnit();
+            this.AddHUGrid.DataContext = unit;
             bl = BL.FactoryBL.Instance;
 
             typeComboBox.SelectedIndex = 0;
@@ -45,9 +45,9 @@ namespace PLWPF
         {
             try
             {
-                bl.AddRequest(guest);
-                guest = new BE.GuestRequest();
-                this.AddHUGrid.DataContext = guest;
+                bl.AddHostingUnit(unit);
+                unit = new BE.HostingUnit();
+                this.AddHUGrid.DataContext = unit;
 
             }
             catch (FormatException)

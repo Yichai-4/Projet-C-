@@ -13,9 +13,9 @@
                 <ImageBrush/>
             </Grid.Background>
             <Grid.RowDefinitions>
-                <RowDefinition Height="52*"/>
+                <RowDefinition Height="63*"/>
                 <RowDefinition Height="49*"/>
-                <RowDefinition Height="379*"/>
+                <RowDefinition Height="422*"/>
             </Grid.RowDefinitions>
             <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Margin="0,10,0,0" Height="27" Width="396"/>
             <Button x:Name="ButtonADD" 
@@ -66,8 +66,8 @@
                 </Style>
             </Button.Style>-->
             </Button>
-            <Label x:Name="TitleGR" Content="Add a new guest request " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Segoe UI Black" Height="42" Margin="113,10,107,0" Width="309"/>
-            <Grid x:Name="grid2" HorizontalAlignment="Left" Margin="269,259,0,99" Grid.Row="2" VerticalAlignment="Center" Height="64" Width="242">
+            <Label x:Name="TitleGR" Content="Add a new Guest Request " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Segoe UI Black" Margin="108,14,101,10" Height="42" Width="318"/>
+            <Grid x:Name="grid4" HorizontalAlignment="Left" Margin="269,259,0,99" Grid.Row="2" VerticalAlignment="Center" Height="64" Width="242">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -81,7 +81,7 @@
                 <Label Content="Release Date:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="1" VerticalAlignment="Center"/>
                 <DatePicker x:Name="releaseDateDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="1" SelectedDate="{Binding ReleaseDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
             </Grid>
-            <Grid x:Name="grid4" HorizontalAlignment="Left" Margin="635,294,-106,0" Grid.Row="2" VerticalAlignment="Top" Height="0" Width="0">
+            <Grid x:Name="grid5" HorizontalAlignment="Left" Margin="635,294,-108,0" Grid.Row="2" VerticalAlignment="Top" Height="0" Width="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -90,7 +90,7 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
             </Grid>
-            <Grid x:Name="grid5" HorizontalAlignment="Left" Margin="10,227,0,0" Grid.Row="2" VerticalAlignment="Top">
+            <Grid x:Name="grid2" HorizontalAlignment="Left" Margin="10,227,0,0" Grid.Row="2" VerticalAlignment="Top" Height="96" Width="192">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -113,7 +113,7 @@
                       SelectedItem="{Binding Type}" HorizontalAlignment="Left" Height="Auto" Margin="3" Grid.Row="2" VerticalAlignment="Center" Width="120">
                 </ComboBox>
             </Grid>
-            <Grid x:Name="grid3" HorizontalAlignment="Left" Margin="269,13,0,0" Grid.Row="2" VerticalAlignment="Top">
+            <Grid x:Name="grid3" HorizontalAlignment="Left" Margin="269,13,0,0" Grid.Row="2" VerticalAlignment="Top" Height="192" Width="250">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -152,7 +152,7 @@
 
                 </ComboBox>
             </Grid>
-            <Grid x:Name="grid6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top">
+            <Grid x:Name="grid1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="192" Width="225">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>

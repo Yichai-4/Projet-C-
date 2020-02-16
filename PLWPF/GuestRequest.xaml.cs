@@ -59,6 +59,8 @@ namespace PLWPF
             try
             {
                 bl.AddRequest(guest);
+                MessageBox.Show("Your request has been successfully registered !  " +
+                                "This is your Guest Request Key: " + Convert.ToString(guest.GuestRequestKey), "INFORMATION");
                 guest = new BE.GuestRequest();
                 this.AddGRGrid.DataContext = guest;
 
