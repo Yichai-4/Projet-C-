@@ -10,10 +10,30 @@ namespace BE
 {
     public static class Configuration
     {
-        public static int code = 100000000;
 
-        public static int key = 100000000;
+        private static int _code = 100000000;
 
-        public static int key1 = 100000000;
+        private static int _key = 100000000;
+
+        private static int _key1 = 100000000;
+
+
+        public static int code
+        {
+            get { return _code++; }
+            set { _code = value; }
+        }
+        public static int key 
+        {
+            get { return _key++; }
+            set { _key = value; }
+        }
+
+        public static int key1
+        {
+            get { return _key1++; }
+            set { _key1 = value; }
+        }
+
     }
 }

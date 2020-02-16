@@ -8,10 +8,11 @@ namespace BE
 {
     public class HostingUnit
     {
-        public int HostingUnitKey // מספר מזהה של יחידת האירוח
+        private int _HostingUnitKey;
+        public int HostingUnitKey// מספר מזהה של יחידת האירוח
         {
-            get { return HostingUnitKey; }
-            set { HostingUnitKey = Configuration.key++; }
+            get { return _HostingUnitKey; }
+            set { _HostingUnitKey = value; }
         }
         public Host Owner;
         public string HostingUnitName { get; set; }
@@ -36,6 +37,10 @@ namespace BE
         public DateTime EntryDate { get; set; } // תאריך רצוי לתחילת  הנופש 
         public DateTime ReleaseDate { get; set; } // תאריך רצוי לסיום הנופש 
 
+        HostingUnit()
+        {
+            this._HostingUnitKey=Configuration.key
+        }
         public void ToString()
         {
             Console.WriteLine("Hosting unit key: " + HostingUnitKey);
