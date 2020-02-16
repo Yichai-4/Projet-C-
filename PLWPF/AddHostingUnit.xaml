@@ -7,7 +7,7 @@
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PLWPF.AddHostingUnit"
         mc:Ignorable="d"
         Title="AddHostingUnit" Height="511" Width="478.5">
-    <Grid>
+    <Grid x:Name="AddHUGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="70*"/>
             <RowDefinition Height="377*"/>
@@ -21,7 +21,7 @@
         <Button x:Name="ButtonADD" 
             Content="ADD" 
             HorizontalAlignment="Center" Margin="0,357,0,0" Grid.Row="1" VerticalAlignment="Center" Width="470" FontSize="18" 
-            FontWeight="Bold" Height="48" Background="#FF27F113" VerticalContentAlignment="Center" RenderTransformOrigin="-0.387,0.474">
+            FontWeight="Bold" Height="48" Background="#FF27F113" VerticalContentAlignment="Center" RenderTransformOrigin="-0.387,0.474" Click="ButtonADD_Click">
             <Button.Style>
                 <Style>
                     <Style.Triggers>
