@@ -9,7 +9,6 @@ namespace BE
 {
     public class Order
     {
-
         public int OrderKey                    // מספר מזהה של ההזמנה
         {
             get { return OrderKey; }

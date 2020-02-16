@@ -17,7 +17,7 @@
         </Grid.Background>
         <Label Content="Add a New Hosting Unit" FontSize="24" FontFamily="Segoe UI Black" VerticalAlignment="Center" HorizontalAlignment="Center" Height="42" Margin="94,10,80,23" Width="296"/>
         <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Left" Height="27" Width="396"/>
-       
+
         <Grid x:Name="grid3" HorizontalAlignment="Left" Margin="308,75,0,0" Grid.Row="1" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -91,8 +91,8 @@
         </Grid>
         <Button x:Name="ButtonADD" 
             Content="ADD" 
-            HorizontalAlignment="Center" Margin="0,326,0,0" Grid.Row="1" VerticalAlignment="Center" Width="470" FontSize="18" 
-            FontWeight="Bold" Height="48" Background="#FF27F113" VerticalContentAlignment="Center" RenderTransformOrigin="-0.387,0.474" Click="ButtonADD_Click">
+            HorizontalAlignment="Center" Margin="10,312,10,10" Grid.Row="1" VerticalAlignment="Center" Width="450" FontSize="18" 
+            FontWeight="Bold" Height="52" Background="#FF27F113" VerticalContentAlignment="Center" RenderTransformOrigin="-0.387,0.474" Click="ButtonADD_Click">
             <Button.Style>
                 <Style>
                     <Style.Triggers>

@@ -46,8 +46,8 @@ namespace PLWPF
             try
             {
                 bl.AddHostingUnit(unit);
-                unit = new BE.HostingUnit();
-                this.AddHUGrid.DataContext = unit;
+                //unit = new BE.HostingUnit();
+                //this.AddHUGrid.DataContext = unit;
 
             }
             catch (FormatException)

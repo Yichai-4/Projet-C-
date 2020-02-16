@@ -16,7 +16,7 @@ namespace DAL
         public void AddGuestRequest(GuestRequest guestRequest)
         {
             if (DataSource.lguestRequests.Exists(x => guestRequest.GuestRequestKey == x.GuestRequestKey))
-                throw new Exception("guestRequest with the same GuestRequestKey  founded !!!");
+                throw new Exception("guestRequest with the same GuestRequestKey founded !!!");
 
             else
                 DataSource.lguestRequests.Add(guestRequest);
@@ -27,7 +27,7 @@ namespace DAL
         {
 
             if (DataSource.lhostingUnits.Exists(x => hostingUnit.HostingUnitKey == x.HostingUnitKey))
-                throw new Exception("HostingUnit with the same HostingUnitKey  founded !!!");
+                throw new Exception("HostingUnit with the same HostingUnitKey founded !!!");
 
             else
                 DataSource.lhostingUnits.Add(hostingUnit);

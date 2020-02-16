@@ -32,7 +32,8 @@ namespace PLWPF
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            new Password().ShowDialog();
+            new PersonalArea().ShowDialog();
+            //new Password().ShowDialog();
         }
     }
 
