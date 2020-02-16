@@ -13,7 +13,7 @@ namespace BE
         public int GuestRequestKey// מספר הבקשה לאירוח
         {
             get { return _GuestRequestKey; }
-            set { _GuestRequestKey = Configuration.code++; }
+            set { _GuestRequestKey =value;  }
         }
         public string PrivateName { get; set; } // שם פרטי של הלקוח 
         public string FamilyName { get; set; } // שם המשפחה 
@@ -35,7 +35,10 @@ namespace BE
         public Enums.Pool FitnessRoom { get; set; }
         public string PhoneNumber { get; set; }
 
-        
+        public GuestRequest()
+        {
+            this._GuestRequestKey = Configuration.code;
+        }
         public void  ToString()
         {
             Console.WriteLine("Guest request key: " + GuestRequestKey);
