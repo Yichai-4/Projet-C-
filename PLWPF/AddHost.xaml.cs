@@ -19,17 +19,39 @@ namespace PLWPF
     /// </summary>
     public partial class AddHost : Window
     {
+        BE.Host host;
+        BL.IBL bl;
+
         public AddHost()
         {
             InitializeComponent();
+
+            host = new BE.Host();
+            this.AddHostGrid.DataContext = host;
+            bl = BL.FactoryBL.Instance;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void AddHU_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                //bl.AddHost(host);
+                MessageBox.Show("Your inscription has been successfully registered !  " +
+                                "This is your Hostt Key: " + Convert.ToString(host.HostKey), "INFORMATION");
+                host = new BE.Host();
+                this.AddHostGrid.DataContext = host;
 
-            System.Windows.Data.CollectionViewSource hostViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("hostViewSource")));
-            // Charger les données en définissant la propriété CollectionViewSource.Source :
-            // hostViewSource.Source = [source de données générique]
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("check your input and try again");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            this.Close();
         }
     }
 }

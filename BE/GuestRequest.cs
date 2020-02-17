@@ -8,9 +8,15 @@ namespace BE
 {
     public class GuestRequest
     {
+
+        public GuestRequest()
+        {
+            this._GuestRequestKey = Configuration.code;
+        }
+
         // מספר הבקשה לאירוח
         private int _GuestRequestKey;
-        public int GuestRequestKey// מספר הבקשה לאירוח
+        public int GuestRequestKey
         {
             get { return _GuestRequestKey; }
             set { _GuestRequestKey =value;  }
@@ -35,11 +41,18 @@ namespace BE
         public Enums.Pool FitnessRoom { get; set; }
         public string PhoneNumber { get; set; }
 
-        public GuestRequest()
+        public string MsgBoxGR
         {
-            this._GuestRequestKey = Configuration.code;
+            get
+            {
+                return @"Your request has been successfully registered !
+                         Guest request key: " + GuestRequestKey +
+                       @"Your registration date: " + RegistrationDate;
+            }
+            set { }
         }
-        public void  ToString()
+
+        public void ToString()
         {
             Console.WriteLine("Guest request key: " + GuestRequestKey);
             Console.WriteLine("Private name: " + PrivateName);
@@ -62,6 +75,5 @@ namespace BE
             Console.WriteLine("Fitness room: " + FitnessRoom);
             Console.WriteLine("Phone number: " + PhoneNumber);
         }
-
     }
 }
