@@ -59,6 +59,7 @@ namespace PLWPF
             try
             {
                 bl.AddRequest(guest);
+                guest.RegistrationDate = DateTime.Now.ToShortDateString();
                 MessageBox.Show(guest.MsgBoxGR, "INFORMATION");
                 //MessageBox.Show("Your request has been successfully registered !  " +
                 //                "This is your Guest Request Key: " + Convert.ToString(guest.GuestRequestKey), "INFORMATION");

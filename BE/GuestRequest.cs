@@ -45,7 +45,9 @@ namespace BE
         {
             get
             {
-                return "Your request has been successfully registered !  " + "Guest request key: " + GuestRequestKey;
+                return @"Your request has been successfully registered !
+                         Guest request key: " + GuestRequestKey +
+                       @"Your registration date: " + RegistrationDate;
             }
             set { }
         }
