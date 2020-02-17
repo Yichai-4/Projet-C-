@@ -26,7 +26,17 @@ namespace PLWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new PersonalArea().ShowDialog();
+            //foreach (var item in lhost)
+            //{
+
+            //}
+            //{
+            //    new addhostingunit().showdialog();
+            //}
+            //else
+            //{
+            //    messagebox.show("you are not yet registered as a host!", "information", messageboxbutton.ok, messageboximage.error);
+            //}
         }
     }
 }

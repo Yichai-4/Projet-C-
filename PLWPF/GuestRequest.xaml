@@ -18,54 +18,7 @@
             <RowDefinition Height="422*"/>
         </Grid.RowDefinitions>
         <Label Content="Please fill in the following fields and then press &quot;ADD&quot;:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontFamily="Tahoma" FontWeight="Bold" Margin="0,10,0,0" Height="27" Width="396"/>
-        <Button x:Name="ButtonADD" 
-                Content="ADD" 
-                HorizontalAlignment="Center" Margin="10,360,17,10" Grid.Row="2" VerticalAlignment="Center" FontSize="24" 
-                Click="ButtonEnter_Click" FontWeight="Bold" Background="#FF27F113" VerticalContentAlignment="Center" Height="52" Width="501">
-            <!--<Button.Style>
-                <Style>
-                    <Style.Triggers>
-                        <DataTrigger Binding="{Binding ElementName=tbPrivateName, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=tbFamilyName, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=dpEntryDate, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=dpReleaseDate, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=tbAdults, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=tbChildren, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=cbArea, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=cbType, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=cbPool, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=cbJacuzzi, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=cbGarden, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=cbAttractions, Path=Text}" Value="">
-                            <Setter Property="Button.IsEnabled" Value="False"/>
-                        </DataTrigger>
-
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>-->
-        </Button>
+        
         <Label x:Name="TitleGR" Content="Add a new Guest Request " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Segoe UI Black" Margin="108,14,101,10" Height="42" Width="318"/>
         <Grid x:Name="grid4" HorizontalAlignment="Left" Margin="269,259,0,99" Grid.Row="2" VerticalAlignment="Center" Height="64" Width="242">
             <Grid.ColumnDefinitions>
@@ -149,7 +102,6 @@
             <Label Content="Synagogue:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="5" VerticalAlignment="Center"/>
             <ComboBox x:Name="synagogueComboBox" Grid.Column="1" 
                       SelectedItem="{Binding Synagogue}" HorizontalAlignment="Left" Height="Auto" Margin="3" Grid.Row="5" VerticalAlignment="Center" Width="120">
-
             </ComboBox>
         </Grid>
         <Grid x:Name="grid1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="192" Width="225">
@@ -178,6 +130,54 @@
             <Label Content="Private Name:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="5" VerticalAlignment="Center"/>
             <TextBox x:Name="privateNameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="5" Text="{Binding PrivateName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
+        <Button x:Name="ButtonADD" 
+                Content="ADD" 
+                HorizontalAlignment="Center" Margin="10,360,17,10" Grid.Row="2" VerticalAlignment="Center" FontSize="24" 
+                Click="ButtonEnter_Click" FontWeight="Bold" Background="#FF27F113" VerticalContentAlignment="Center" Height="52" Width="501">
+            <Button.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=privateNameTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=familyNameTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=mailAdressTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=phoneNumberTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=adultsTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=childrenTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=entryDateDatePicker, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=releaseDateDatePicker, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbPool, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbJacuzzi, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbGarden, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=cbAttractions, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="False"/>
+                        </DataTrigger>
+
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
     <!--</ScrollViewer>-->
 </Window>

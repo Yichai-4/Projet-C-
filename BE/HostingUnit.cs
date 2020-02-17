@@ -47,8 +47,8 @@ namespace BE
         {
             get
             {
-                return @"Your request has been successfully registered !
-                Your Hosting Unit key: " + HostingUnitKey;
+                return "Your Hosting Unit has been successfully registered !" +
+                       "\nYour Hosting Unit key: " + HostingUnitKey;
             }
             set { }
         }

@@ -65,12 +65,14 @@ namespace DAL
         }
 
        
-
         public void GuestRequestUpdate(GuestRequest guestRequest)
         {
             throw new NotImplementedException();
         }
 
-     
+        public void AddHost(Host host)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

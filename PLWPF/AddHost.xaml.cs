@@ -35,10 +35,9 @@ namespace PLWPF
         {
             try
             {
-                //bl.AddHost(host);
-                MessageBox.Show("Your inscription has been successfully registered !  " +
-                                "This is your Hostt Key: " + Convert.ToString(host.HostKey), "INFORMATION");
-                host = new BE.Host();
+                bl.AddHost(host);
+                MessageBox.Show(host.MsgBoxHost);
+                //host = new BE.Host();
                 this.AddHostGrid.DataContext = host;
 
             }

@@ -27,13 +27,18 @@ namespace PLWPF
 
         private void buttonAddHU_Click(object sender, RoutedEventArgs e)
         {
-            new AddHostingUnit().ShowDialog();
+            new Password().ShowDialog();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             new PersonalArea().ShowDialog();
             //new Password().ShowDialog();
+        }
+
+        private void buttonAddHost_Click(object sender, RoutedEventArgs e)
+        {
+            new AddHost().ShowDialog();
         }
     }
 

@@ -48,7 +48,7 @@ namespace PLWPF
                 bl.AddHostingUnit(unit);
                 MessageBox.Show(unit.MsgBoxHU, "INFORMATION");
                 //unit = new BE.HostingUnit();
-                //this.AddHUGrid.DataContext = unit;
+                this.AddHUGrid.DataContext = unit;
 
             }
             catch (FormatException)
