@@ -42,6 +42,15 @@ namespace DAL
             else
                 DataSource.lorders.Add(orders);
         }
+        public void AddHost(Host host)
+        {
+            if (DataSource.lhost.Exists(x => host.HostKey == x.HostKey))
+                throw new Exception("Host with the same HostKey  founded !!!");
+
+            else
+                DataSource.lhost.Add(host);
+        }
+
 
         #endregion
 
@@ -97,6 +106,11 @@ namespace DAL
             return guestRequests;
         }
 
+
+        public List<Host> ListOfHosts(List<Host> host)
+        {
+            return host;
+        }
         #endregion
 
 

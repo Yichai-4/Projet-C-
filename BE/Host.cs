@@ -10,7 +10,12 @@ namespace BE
     // שמייצגת מארח  Host מחלקה בשם
     public class Host
     {
-        public int HostKey { get; set; }
+        private int _HostKey { get; set; }
+        public int HostKey// מספר מזהה של יחידת האירוח
+        {
+            get { return _HostKey; }
+            set { _HostKey = value; }
+        }
         public string PrivateName { get; set; }
         public string FamilyName { get; set; }
         public int PhoneNumber { get; set; }
@@ -18,6 +23,10 @@ namespace BE
         public int BankAccountNumber { get; set; }
         public bool CollectionClearance { get; set; }
 
+        public Host()
+        {
+            this._HostKey = Configuration.key2;
+        }
         public void ToString()
         {
             Console.WriteLine("Host key: " + HostKey);

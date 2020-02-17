@@ -15,6 +15,8 @@ namespace DAL
         void AddHostingUnit(HostingUnit hostingUnit); // הוספת יחידת אירוח 
         bool DeleteHostingUnit(int myhostingUnitKey); // מחיקת יחידת אירוח 
         void UpdateHostingUnit(HostingUnit hostingUnit); // עדכון יחידת אירוח 
+        void AddHost(Host host);
+
 
         void AddOrder(Order order); // הוספת הזמנה 
         void UpdateOrder(Order order); // עדכון הזמנה 

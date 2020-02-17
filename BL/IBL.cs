@@ -13,6 +13,8 @@ namespace BL
         void AddOrder(GuestRequest request,HostingUnit myHostingUnit);
         bool AddHostingUnit(HostingUnit hostingUnit);
         bool AddRequest(GuestRequest getRequest);
+        bool AddHost(Host host);
+
         bool DeleteHostingUnit(HostingUnit hostingUnit);
         bool UpdateHostingUnit(HostingUnit hostingUnit);
         bool CheckDate(GuestRequest start, GuestRequest end);

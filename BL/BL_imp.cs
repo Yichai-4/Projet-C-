@@ -36,6 +36,11 @@ namespace BL
             return true;
         }
 
+        public bool AddHost(Host host)
+        {
+            instance.AddHost(host);
+            return true;
+        }
         public bool Banq_Ishur(GuestRequest guest)
         {
            
