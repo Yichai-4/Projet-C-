@@ -71,6 +71,9 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-     
+        public void AddHost(Host host)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

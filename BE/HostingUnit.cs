@@ -33,6 +33,7 @@ namespace BE
         public bool ChildrenAttractions { get; set; } // האם מעוניין באטרקציות לילדים 
         public bool Synagogue { get; set; }
         public bool FitnessRoom { get; set; }
+
         public bool[,] Diary = new bool[12, 31]; // Creates an initialized boolean matrix in FALSE:
 
         public int nomberOfPersons;

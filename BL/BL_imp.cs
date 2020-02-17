@@ -106,14 +106,141 @@ namespace BL
         {
             throw new NotImplementedException();
         }
+        #region EPool
+        public bool EPool(GuestRequest req , HostingUnit h)
+        {
+            bool flag = true;
+            if (req.Pool == Enums.Pool.Necessary)
+                flag = true;
+            else if (req.Pool == Enums.Pool.Uninterested)
+                flag = false;
+            else if (req.Pool == Enums.Pool.Possible)
+                return true;
 
+            if (h.Pool == flag)
+                return true;
+            else if (h.Pool != flag)
+                return false;
+
+
+            throw new NotImplementedException();
+
+
+
+        }
+        public bool EJacuzzi(GuestRequest req, HostingUnit h)
+        {
+            bool flag = true;
+            if (req.Jacuzzi == Enums.Pool.Necessary)
+                flag = true;
+            else if (req.Jacuzzi == Enums.Pool.Uninterested)
+                flag = false;
+            else if (req.Jacuzzi == Enums.Pool.Possible)
+                return true;
+
+            if (h.Jacuzzi == flag)
+                return true;
+            else if (h.Jacuzzi != flag)
+                return false;
+
+
+            throw new NotImplementedException();
+
+
+
+        }
+        public bool EChildrenAttractions(GuestRequest req, HostingUnit h)
+        {
+            bool flag = true;
+            if (req.ChildrenAttractions == Enums.Pool.Necessary)
+                flag = true;
+            else if (req.ChildrenAttractions == Enums.Pool.Uninterested)
+                flag = false;
+            else if (req.ChildrenAttractions == Enums.Pool.Possible)
+                return true;
+
+            if (h.ChildrenAttractions == flag)
+                return true;
+            else if (h.ChildrenAttractions != flag)
+                return false;
+
+
+            throw new NotImplementedException();
+
+
+
+        }
+        public bool EGarden(GuestRequest req, HostingUnit h)
+        {
+            bool flag = true;
+            if (req.Garden == Enums.Pool.Necessary)
+                flag = true;
+            else if (req.Garden == Enums.Pool.Uninterested)
+                flag = false;
+            else if (req.Garden == Enums.Pool.Possible)
+                return true;
+
+            if (h.Garden == flag)
+                return true;
+            else if (h.Garden != flag)
+                return false;
+
+
+            throw new NotImplementedException();
+
+
+
+        }
+        public bool ESynagogue(GuestRequest req, HostingUnit h)
+        {
+            bool flag = true;
+            if (req.Synagogue == Enums.Pool.Necessary)
+                flag = true;
+            else if (req.Synagogue == Enums.Pool.Uninterested)
+                flag = false;
+            else if (req.Synagogue == Enums.Pool.Possible)
+                return true;
+
+            if (h.Synagogue == flag)
+                return true;
+            else if (h.Synagogue != flag)
+                return false;
+
+
+            throw new NotImplementedException();
+
+
+
+        }
+        public bool EFitnessRoom(GuestRequest req, HostingUnit h)
+        {
+            bool flag = true;
+            if (req.FitnessRoom == Enums.Pool.Necessary)
+                flag = true;
+            else if (req.FitnessRoom == Enums.Pool.Uninterested)
+                flag = false;
+            else if (req.FitnessRoom == Enums.Pool.Possible)
+                return true;
+
+            if (h.FitnessRoom == flag)
+                return true;
+            else if (h.FitnessRoom != flag)
+                return false;
+
+
+            throw new NotImplementedException();
+
+
+
+        }
+        #endregion
         public List<HostingUnit> proposition(GuestRequest request)//verifi si ce qui est demande exist et le selectionne
         {
 
             List<HostingUnit> best = new List<HostingUnit>();
             var compatible2 = from g in DataSource.lhostingUnits
-                              where g.Area == request.Area && g.NumChildren <= request.Children && g.NumAdults <= request.Adults && g.Pool && 
-                              g.Jacuzzi && g.ChildrenAttractions && g.Garden
+                              where g.Area == request.Area && g.NumChildren <= request.Children && g.NumAdults <= request.Adults && EPool(request, g) &&
+                              EJacuzzi(request,g) && EChildrenAttractions(request,g) && EGarden(request,g) && ESynagogue(request, g)
                               select g;
 
             foreach (HostingUnit item in compatible2)
