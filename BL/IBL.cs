@@ -14,6 +14,7 @@ namespace BL
         bool AddHostingUnit(HostingUnit hostingUnit);
         bool AddRequest(GuestRequest getRequest);
         bool AddHost(Host host);
+        bool Epool(GuestRequest req, HostingUnit h);
 
         bool DeleteHostingUnit(HostingUnit hostingUnit);
         bool UpdateHostingUnit(HostingUnit hostingUnit);
