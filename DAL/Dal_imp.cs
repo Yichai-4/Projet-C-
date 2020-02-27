@@ -37,7 +37,7 @@ namespace DAL
         public void AddOrder(Order orders)
         {
             if (DataSource.lorders.Exists(x => orders.OrderKey == x.OrderKey))
-                throw new Exception("Order with the same OrderKey  founded !!!");
+                throw new Exception("Order with the same OrderKey founded !!!");
 
             else
                 DataSource.lorders.Add(orders);
@@ -45,7 +45,7 @@ namespace DAL
         public void AddHost(Host host)
         {
             if (DataSource.lhost.Exists(x => host.HostKey == x.HostKey))
-                throw new Exception("Host with the same HostKey  founded !!!");
+                throw new Exception("Host with the same HostKey founded !!!");
 
             else
                 DataSource.lhost.Add(host);
@@ -75,29 +75,17 @@ namespace DAL
 
         public List<HostingUnit> ListOfHostingUnits(List<HostingUnit> hostingUnits)
         {
-
             return hostingUnits;
-
         }
-
-
-
-
 
         public List<BankBranch> ListOfBankBranches(List<BankBranch> bankBranches)
         {
             return bankBranches;
-
         }
-
-
-
 
         public List<Order> ListOfOrders(List<Order> orders)
         {
             return orders;
-
-
         }
 
 

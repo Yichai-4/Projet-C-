@@ -273,5 +273,14 @@ namespace BL
             throw new NotImplementedException();
         }
 
+        public bool Epool(GuestRequest req, HostingUnit h)
+        {
+            throw new NotImplementedException();
+        }
+
+        //public IEnumerable<HostingUnit> GetHostingUnit(Func<HostingUnit, bool> predicate = null)
+        //{
+        //    //return Dal_imp.ListOfHostingUnits(predicate);
+        //}
     }
 }

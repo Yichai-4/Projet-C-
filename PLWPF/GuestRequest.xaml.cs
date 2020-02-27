@@ -61,6 +61,7 @@ namespace PLWPF
                 bl.AddRequest(guest);
                 guest.RegistrationDate = DateTime.Now.ToShortDateString();
                 MessageBox.Show(guest.MsgBoxGR, "INFORMATION");
+                bl.proposition(guest);
                 //guest = new BE.GuestRequest();
                 this.AddGRGrid.DataContext = guest;
 

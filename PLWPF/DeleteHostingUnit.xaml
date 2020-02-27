@@ -6,119 +6,47 @@
         xmlns:local="clr-namespace:PLWPF"
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PLWPF.DeleteHostingUnit"
         mc:Ignorable="d"
-        Title="DeleteHostingUnit" Height="434.5" Width="600" Loaded="Window_Loaded">
-    <Window.Resources>
-        <CollectionViewSource x:Key="hostingUnitViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:HostingUnit}, CreateList=True}"/>
-    </Window.Resources>
-    <Grid DataContext="{StaticResource hostingUnitViewSource}">
+        Title="DeleteHostingUnit" Height="434.5" Width="600">
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="100*"/>
             <RowDefinition Height="269*"/>
         </Grid.RowDefinitions>
         <Label Content="Delete an hosting unit" Margin="103,10,87,0" FontSize="36" FontFamily="Segoe UI Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="66" Width="402" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <Button Content="DELETE" Grid.Row="1" VerticalAlignment="Top" Width="136" Height="44" Background="#FFF02D0E" FontSize="24" HorizontalAlignment="Center" Margin="446,240,10,0"/>
-        <ListView x:Name="hostingUnitListView" ItemsSource="{Binding}" Margin="10,10,10,59" Grid.Row="1" SelectionMode="Single">
-            <ListView.ItemContainerStyle>
-                <Style>
-                    <Setter Property="Control.HorizontalContentAlignment" Value="Stretch"/>
-                    <Setter Property="Control.VerticalContentAlignment" Value="Stretch"/>
-                </Style>
-            </ListView.ItemContainerStyle>
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn x:Name="areaColumn" Header="Area" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBox Margin="6,-1,-6,-1" Text="{Binding Area, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="childrenAttractionsColumn" Header="Children Attractions" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding ChildrenAttractions, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="-6,-1"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="fitnessRoomColumn" Header="Fitness Room" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding FitnessRoom, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="-6,-1"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="gardenColumn" Header="Garden" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding Garden, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="-6,-1"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="hostingUnitNameColumn" Header="Hosting Unit Name" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBox Margin="-6,-1" Text="{Binding HostingUnitName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="jacuzziColumn" Header="Jacuzzi" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding Jacuzzi, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="-6,-1"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="numAdultsColumn" Header="Num Adults" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBox Margin="-6,-1" Text="{Binding NumAdults, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="numChildrenColumn" Header="Num Children" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBox Margin="-6,-1" Text="{Binding NumChildren, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="poolColumn" Header="Pool" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding Pool, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="-6,-1"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="statusColumn" Header="Status" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBox Margin="-6,-1" Text="{Binding Status, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="subAreaColumn" Header="Sub Area" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBox Margin="-6,-1" Text="{Binding SubArea, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="synagogueColumn" Header="Synagogue" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding Synagogue, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="-6,-1"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn x:Name="typeColumn" Header="Type" Width="80">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBox Margin="-6,-1" Text="{Binding Type, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <DataGrid x:Name="hostingUnitDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,10,10,81" Grid.Row="1" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="areaColumn" Binding="{Binding Area}" Header="Area" Width="SizeToHeader"/>
+                <DataGridCheckBoxColumn x:Name="childrenAttractionsColumn" Binding="{Binding ChildrenAttractions}" Header="Children Attractions" Width="SizeToHeader"/>
+                <DataGridTemplateColumn x:Name="entryDateColumn" Header="Entry Date" Width="SizeToHeader">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding EntryDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridCheckBoxColumn x:Name="fitnessRoomColumn" Binding="{Binding FitnessRoom}" Header="Fitness Room" Width="SizeToHeader"/>
+                <DataGridCheckBoxColumn x:Name="gardenColumn" Binding="{Binding Garden}" Header="Garden" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="hostingUnitKeyColumn" Binding="{Binding HostingUnitKey}" Header="Hosting Unit Key" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="hostingUnitNameColumn" Binding="{Binding HostingUnitName}" Header="Hosting Unit Name" Width="SizeToHeader"/>
+                <DataGridCheckBoxColumn x:Name="jacuzziColumn" Binding="{Binding Jacuzzi}" Header="Jacuzzi" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="msgBoxHUColumn" Binding="{Binding MsgBoxHU}" Header="Msg Box HU" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="numAdultsColumn" Binding="{Binding NumAdults}" Header="Num Adults" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="numChildrenColumn" Binding="{Binding NumChildren}" Header="Num Children" Width="SizeToHeader"/>
+                <DataGridCheckBoxColumn x:Name="poolColumn" Binding="{Binding Pool}" Header="Pool" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="registrationDateColumn" Binding="{Binding RegistrationDate}" Header="Registration Date" Width="SizeToHeader"/>
+                <DataGridTemplateColumn x:Name="releaseDateColumn" Header="Release Date" Width="SizeToHeader">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding ReleaseDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn x:Name="statusColumn" Binding="{Binding Status}" Header="Status" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="subAreaColumn" Binding="{Binding SubArea}" Header="Sub Area" Width="SizeToHeader"/>
+                <DataGridCheckBoxColumn x:Name="synagogueColumn" Binding="{Binding Synagogue}" Header="Synagogue" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="typeColumn" Binding="{Binding Type}" Header="Type" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

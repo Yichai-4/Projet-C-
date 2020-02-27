@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BE;
+using BL;
 
 namespace PLWPF
 {
@@ -19,17 +21,21 @@ namespace PLWPF
     /// </summary>
     public partial class DeleteHostingUnit : Window
     {
+        HostingUnit unit;
+        IBL bl;
+        public HostingUnit currentUnit;
+        public Host currentHost;
+        Host host;
+
         public DeleteHostingUnit()
         {
             InitializeComponent();
+            unit = new HostingUnit();
+            currentHost = new Host();
+            currentHost = host;
+            this.DataContext = currentUnit;
+            bl = FactoryBL.Instance;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-            System.Windows.Data.CollectionViewSource hostingUnitViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("hostingUnitViewSource")));
-            // Charger les données en définissant la propriété CollectionViewSource.Source :
-            // hostingUnitViewSource.Source = [source de données générique]
-        }
     }
 }

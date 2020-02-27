@@ -14,8 +14,6 @@ namespace DS
         public static List<Order> lorders = new List<Order>();
         public static List<BankBranch> lbankBranches = new List<BankBranch>();
         public static List<Host> lhost = new List<Host>();
-
-
     }
     public class DS
     {
